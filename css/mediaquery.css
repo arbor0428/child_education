@@ -1,0 +1,1287 @@
+@media (max-width:1836px){	
+    /*
+    .visual .visualSlick .slick-prev {
+		left: 20%;
+	}
+    .visual .visualSlick .slick-next {
+		right: 20%;
+	}
+*/
+}
+
+@media (max-width:1280px){	
+  
+    header .h_center {
+		position: relative; 
+		width: 98%;
+	}
+    .c_center {
+		width: 98%;
+	}
+    .cont04 .eventBtnWrap .eventBtn .eImgWrap {width: 98%; height: 212px;}
+	/*
+    .visual .visualSlick .slick-prev {
+		left: 25%;
+	}
+    .visual .visualSlick .slick-next {
+		right: 25%;
+	}*/
+
+}
+
+@media (max-width:1022px){	
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        padding-top: 0;
+    }
+    header .h_center .h_bot {
+        display: none;
+    }
+    header .htMwrap {
+        display: none;
+    }
+
+    header .m_btnWrap {
+        display: flex;
+        position: absolute;
+        bottom: 50%; 
+        transform: translateY(50%);
+        right: 0;
+    }
+    .header.openFull {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .header.openFull .m_btnWrap {
+        background-color: #D1282D;
+        width: 40px;
+        height: 40px;
+        bottom: 0;
+        transform: translateY(0);
+        z-index: 1000;
+    }
+
+    header .m_btnWrap .m_subBtn > a {
+        margin-right: 15px;
+    }
+
+	header .m_btn {
+        position: relative;
+        width: 20px; 
+        height: 25px; 
+        font-size: 0; 
+        background-color: transparent; 
+        border:none; 
+        cursor:pointer; 
+        z-index:1000;
+    }
+
+	header .m_btn .bar_top,
+	header .m_btn .bar_mid,
+	header .m_btn .bar_bot {
+        display: block; 
+        position: absolute; 
+        right: 0; 
+        width: 20px; 
+        height: 2px; 
+        border-radius:4px; 
+        background-color: #585858; 
+        transform-origin: top right;  
+        transition:all .3s ease-in-out;
+    }
+	header .m_btn .bar_top {
+        top: 4px;
+    }
+	header .m_btn .bar_mid {
+        top: 50%; 
+        transform: translate(0, -50%);
+    }
+	header .m_btn .bar_bot {
+        bottom: 4px;
+    }
+
+	.header.openFull .m_btn .bar_bot {
+        opacity:0;
+    }
+	.header.openFull .m_btn  .bar_top {
+        top: 13px; 
+        left: 6px; 
+        width: 20px; 
+        transform: rotate(-45deg); 
+        background-color:#fff;
+    }
+	.header.openFull .m_btn  .bar_mid {
+        top: 27px; 
+        left: 8px; 
+        width: 20px; 
+        transform: rotate(45deg);
+        background-color:#fff;
+    }
+
+    header .m_gnb {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 73px;
+        width: 100vw;
+        z-index: 999;
+    }
+
+    header .m_gnb .m_gnb_sub_top {
+        width: 100%;
+        height: 65px;
+    }
+
+    header .m_gnb .m_gnb_sub {
+        background-color: #fff;
+    }
+
+    header .m_gnb .m_gnbTop {
+        padding: 22px 15px;
+        background-color: #D1282D;
+    }
+    header .m_gnb .m_gnbTop p {
+        color: #fff;
+		font-size: 0.875rem;
+    }
+    header .m_gnb .m_gnbTop .loginBtn {
+        padding: 6px 16px;
+        border-radius: 35px;
+        background-color: #fff;
+    }
+    header .m_gnb .m_gnbTop .loginBtn span {
+        margin-right: 8px;
+        color: #585858;
+    }
+    
+    header .m_gnb .m_gnbTop .loginBtn img {
+        height: 15px;
+    }
+
+    header .m_gnbMain > li > a {
+        padding: 15px 15px;
+        border-bottom: 1px solid #BEBEBE;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    header .m_gnbMain li .m_depth2 {
+        display: none;
+        border-top:1px solid #000;;
+        background-color: #EFEFEF;
+    }
+
+    header .m_gnbMain li .m_depth2 li {
+        padding: 15px 0 0px 37px;
+    }
+    header .m_gnbMain li .m_depth2 li a {
+		font-size: 0.875rem;
+	}
+
+    header .m_gnbMain li .m_depth2 li:last-child {
+        padding-bottom: 15px;
+    }
+
+    header .m_gnbMain li .lnr-chevron-up {
+        display: none;
+    }
+
+    header .m_gnbMain li.on .lnr-chevron-up {
+        display: block;
+    }
+    
+    header .m_gnbMain li.on .lnr-chevron-down {
+        display: none;
+    }
+
+    header .m_gnbMain li .lnr-chevron-up, header .m_gnbMain li .lnr-chevron-down {
+        font-weight: bold;
+        color: #585858;
+    }
+
+    header .m_pro_top .m_blackBtn {
+        margin-right: 10px;
+        background-color: #000;
+        color: #fff;
+        padding: 5px 10px;
+    }
+    header .m_pro_top .m_blackBtn span {
+        margin-left: 5px;
+        color: #fff;
+    }
+    header .m_pro_top {
+        box-sizing: border-box;
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
+    header .m_pro_top span {
+        color: #585858;
+        font-size: 0.857rem;
+    }
+
+    /* header .m_gnb {
+        display: block;
+    } */
+    header .m_proSlideWrap {
+        box-sizing: border-box;
+        padding-left: 12px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    header .m_proSlide {
+        width: 600px;
+        height: 90px;
+        padding-bottom: 20px;
+    }
+
+	header .m_product, header .m_book {
+		margin-top: 30px; 
+	}
+
+    header .m_book .m_bookSlide {
+        margin-bottom: 30px;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    header .m_book .m_bookSlide .m_bookBox {
+        margin: 0 5px;
+        width: 172px;
+        height: 160px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    header .m_book .m_bookSlide .m_bookBox a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header .m_product .m_proBox {
+        display: inline-block;
+        margin: 0 7px;
+        width: 70px;
+    }
+
+    header .m_product .m_proBox a {
+        display: block;
+        width: 100%;
+    }
+
+    header .m_product .m_proBox .m_proImg {
+        width: 100%;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #C1C1C1;
+    }
+
+    header .m_product .m_proBox p {
+        font-size: 0.813rem;
+        text-align: center;
+    }
+    
+
+
+	header .m_gnbBot {
+        padding: 10px 0;
+		height: 40px; 
+		background-color: #E2E2E2;
+	}
+    
+    header .m_botIcon {
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+    }
+    header .m_botIcon li {
+        width: 31.333%;
+    }
+    header .m_botIcon li a {
+        height: 100%;
+        flex-direction:column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    header .m_botIcon li span {
+        font-size: 0.75rem;
+    }
+
+    .visual {
+        margin-top: 65px;
+    }
+
+    .cont01 {
+        display: none;
+    }
+
+    .cont02 .sixIconWrap {
+        -ms-flex-wrap: wrap; flex-wrap: wrap;
+    }
+
+    .cont02 .sixIconWrap .sixIcon {
+        flex-basis: auto;
+        width: 31.333%;
+        margin: 0 1%;
+    }
+
+    .cont02 .sixIconWrap .sixIcon:nth-child(1), 
+    .cont02 .sixIconWrap .sixIcon:nth-child(2), 
+    .cont02 .sixIconWrap .sixIcon:nth-child(3) {
+        margin-bottom: 40px;
+    }
+
+    .cont02 .sixIconWrap .sIconImg {
+        margin: 0 auto;
+        width: 90px;
+        height: 90px;
+    }
+
+    .cont02 .sixIconWrap .sixIcon:hover .sIconImg {
+        box-shadow:0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .cont04 .eventBtnWrap {
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;        
+    }
+    
+    .cont04 .eventBtnWrap .eventBtn {
+        width: 49%;
+    }
+
+    .cont04 .eventBtnWrap .eventBtn:nth-child(1), 
+    .cont04 .eventBtnWrap .eventBtn:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        padding-bottom: 50px;
+    }
+
+    footer .f_top .f_btnWrap {
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;        
+    }
+
+    footer .f_top .f_select {
+        position: absolute;
+        bottom: 62px; 
+        right: 1%;
+    }
+
+    footer .f_bot .f_adr span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+	footer .f_bot .f_adr span .m_noshow {
+		display: none;
+	}
+
+	footer .f_bot .f_adr span .m_br {
+		display: block;
+	}
+
+    footer .f_bot .f_adr span::before {
+        display: none;
+        content:"";
+        margin: 0;
+    }
+
+    footer .htMwrap {
+        margin-top: 20px;
+	    display: flex;
+    }
+
+    footer .f_awardWrap {
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;        
+    }
+
+    footer .f_top .f_btnWrap li::after {
+        width: 0;
+    }
+
+    footer .f_awardWrap .f_award {
+        margin-bottom: 30px;
+        margin-right: 15px;
+    }
+
+	/*회원가입 로그인*/
+
+    .htMwrap li {
+        margin: 0 20px;
+    }
+
+	.grayCont {
+		padding: 150px 0 100px 0;
+	}
+
+	/*회원가입 로그인*/
+
+	/*제품등록*/
+	.subWrap .itemListBox li {
+		width: 23%;
+	}
+
+	.subWrap .itemListBox li a {
+		width: 100%;
+	}
+
+	.subWrap .itemListBox li .imgWrap {
+		width: 100%;
+	}
+
+	.subWrap .itemListBox li .imgWrap img {
+		height: 90%;
+	}
+	/*제품등록*/
+
+	/*서비스접수*/
+	.stepImgWrap {
+		padding: 20px 0;
+		background-color:#EEF7FF;
+	}
+	.stepImgWrap .stepImglink {
+		display: none;
+	}
+	.stepImgWrap .serBnrWrap {
+		margin: 0 auto;
+		display: flex;
+		width: 90%;
+	}
+	.stepImgWrap .serBnrWrap .gotoBtn {
+		border-radius: 35px;
+		padding: 5px 10px;
+		background-color: #000;
+		color: #fff;
+		font-size: 0.875rem;
+	}
+	.stepImgWrap .serBnrWrap .secBnrTxt {
+		color: #616161;
+	}
+	.m_topNav {
+		margin-top: 25px;
+		padding: 20px 0;
+		display: block;
+		border-bottom: 1px solid #BFBFBF;
+		font-size: 1.125rem;
+		font-weight: 500;
+	}
+	.ser_subTit02 {
+		display: none;
+	}
+
+}
+
+@media (max-width:900px) {
+	.cenBoxWrap.join {
+		width: 90%;
+	}
+
+	/*제품등록*/
+	.serviceBox {
+		width: 96%;
+	}
+	.serviceGryBtn {
+		width: 96%;
+	}
+	/*제품등록*/
+}
+
+
+@media (max-width:768px) {
+	.cenBoxWrap.login {
+		width: 90%;
+	}
+}
+
+@media (max-width:698px) {
+
+    #popupWrap .popupBox {
+        width: 300px;
+    }
+    #popupWrap .slick-next, #popupWrap .slick-prev {
+        width: 50px;
+        height: 50px;
+    }
+    #popupWrap .slick-prev {
+        left: -17px;
+    }
+    #popupWrap .slick-next {
+        right: -17px;
+    }
+    #popupWrap .popupSlick {
+        height: 300px;
+    }
+    #popupWrap .popupSlick .popupImg {
+        width: 300px;
+        height: 300px;
+    }
+    #popupWrap .slick-dots {
+        bottom: 48px;
+    }
+    #popupWrap .popBotTxt {
+        padding: 13px 30px;
+    }
+    #popupWrap .slick-next:before, #popupWrap .slick-prev:before {
+        background-size: 30px 30px;
+    }
+    #popupWrap .slick-dots li {
+        width: 10px;
+        height: 10px;
+    }
+    #popupWrap .slick-dots li button {
+        width: 10px;
+        height: 10px;
+    }
+
+    header .h_center {
+        width: 100%;
+        height: 66px;
+    }
+    header .h_center .h_top {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    header .h_center .h_top .logo {
+        position: absolute;
+        left: 15px;
+    }
+    header .h_center .h_top .logo a img {
+        height: 35px;
+    }
+
+    header .m_btnWrap {
+        margin-right: 15px;
+    }
+    
+    header .m_gnb {
+        top: 65px;
+    }
+
+    header .m_book .m_bookSlide .m_bookBox {
+        height: 77px;
+    }
+
+    .c_center {
+        width: 90%;     
+    }
+    .sub_tit {
+        font-size: 1.5rem;
+    }
+
+    .visual .visualSlick .slick-dots li {
+        width: 10px;
+        height: 10px;
+    }
+    .visual .visualSlick .slick-dots li button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cont02 .sixIconWrap .sIconTxt {
+        font-size: 1rem;
+    }
+    .cont03 .c_center {
+        width: 100%;
+    }
+    .cont03 .mainBnr {
+        background-image: url("/images/m_main_banner.png");
+        height: 135px;
+        border-radius: 0;
+    }
+    .cont04 .eventBtnWrap .eventBtn .eventTit {
+        font-size: 1.143rem;
+    }
+    .cont04 .eventBtnWrap .eventBtn .eventDet {
+        font-size: 0.875rem;
+    }
+    .cont04 .eventBtnWrap .eventBtn .eImgWrap {
+        height: 140px;
+    }
+    .cont05 .newsTop {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .cont05 .newsTop .newsTit {
+        width:100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .cont05 .newsTop .moreBtn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1rem;
+    }
+    .cont05 .newsBox .newsRow {
+        padding: 16px 0;
+    }
+    .cont05 .newsBox .newsRow .newsRow_tit {
+        font-size: 1rem;
+    }
+    .cont05 .newsBox .newsRow .newsRow_date {
+        font-size: 1rem;
+    }
+
+    footer .f_top .f_btnWrap li a {
+        display: inline-block;
+        font-size: 0.875rem;
+        letter-spacing: -1px;
+		margin-bottom: 5px;
+    }
+
+    footer .f_top .f_select {
+        bottom: 56px;
+        width: 158px;
+    }
+    footer .f_awardWrap .f_award {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    footer .f_awardWrap .f_award.mr18 {
+        margin-right: 18px;
+    }
+    footer .f_awardWrap .f_award .awardImg {
+        margin-right: 8px;
+        height: 25px;
+    }
+
+    footer .f_awardWrap .f_award:nth-child(1), 
+    footer .f_awardWrap .f_award:nth-child(2), 
+    footer .f_awardWrap .f_award:nth-child(3) {
+        width: auto;
+        margin-right: 10px;
+    }
+    footer .f_awardWrap .f_award .awardTxt p {
+        font-size: 0.75rem;
+    }
+    footer .f_bot .f_adr span {
+        font-size: 0.875rem;
+    }
+
+	footer .htMwrap li a {
+		font-size: 0.75rem;
+	}
+
+	/*회원가입 로그인*/
+
+	.cenBoxWrap {
+		padding: 0 0 100px 0;
+		width: 100%;
+		border: none;
+	}
+
+	.grayCont {
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.cenBoxWrap.vh100 {
+		padding: 0;
+		width: 100% !important;
+		height: 100vh;
+	}
+
+	.cenBoxWrap.flcul {
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex; 
+		-webkit-box-pack: justify; 
+		-ms-flex-pack: justify; 
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.cenBoxWrap.vh100 .m_wrap {
+		width: 86%;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+
+	.cenBoxWrap.login {
+		width: 100%;
+		border: none;
+	}
+
+    .htMwrap li {
+        margin: 0 12px;
+    }
+    .htMwrap .htMimg img {
+        height: 26px;
+    }
+
+    .htMwrap .htMimg.edutv img {
+        height: 20px;
+    }
+
+	.jt_center {
+		width: 100%;
+	}
+
+	.jt_center .jt_left {
+		align-self: stretch;
+		margin-top: -27px;
+	}
+
+	.jt_center .jt_right {
+		align-self: stretch;
+	}
+
+	.cenBoxWrap .loginWrap {
+		padding: 100px 0 0 0;
+		width: 86%;
+	}
+
+	.cenBoxWrap .loginWrap .loginTit {
+		margin-bottom: 35px;
+		font-size: 1.5rem;
+	}
+
+	.cenBoxWrap .loginWrap .inputWrap input {
+		font-size: 0.938rem;
+		margin-left: 35px;
+		width: calc(100% - 35px);
+	}
+
+	.cenBoxWrap .loginWrap .inputWrap input::placeholder {
+		font-size: 0.938rem;
+	}
+
+	.cenBoxWrap .loginWrap .inputWrap img {
+		bottom: 15px;
+		height: 20px;
+	}
+
+	.cenBoxWrap .loginWrap .inputWrap.mb54 {
+		margin-bottom: 30px;
+	}
+
+	.cenBoxWrap .loginWrap .loginBtn {
+		height: 50px;
+		line-height: 40px;
+		font-size: 1.125rem;
+	}
+
+	.cenBoxWrap .loginWrap .subBtnWrap a {
+		font-size: 0.875rem;
+	}
+
+	.cenBoxWrap.join {
+		width: 86%;
+	}
+
+	.cenBoxWrap .joinWrap02 {
+		width: 100%;
+	}
+
+	.cenBoxWrap .joinWrap .joinTit {
+		margin-bottom: 35px;
+		font-size: 1.5rem;
+	}
+
+	.cenBoxWrap .joinWrap .joinDet {
+		margin-bottom: 33px;
+		line-height: 1.5;
+		font-size: 1rem;
+	}
+
+	.cenBoxWrap .joinWrap .joinDet br {
+		display: none;
+	}
+
+	.joinWrap02.allFind_re02 {
+		padding-bottom: 100px;
+	}
+
+	.cenBoxWrap .joinWrap .regiBox {
+		padding: 15px 0;
+	}
+
+	.cenBoxWrap .joinWrap .regiBox .regiTxt {
+		font-size: 1.250rem;
+	}
+
+	.cenBoxWrap .joinWrap .regiBox .regiDet {
+		margin-bottom: 19px;
+		font-size: 0.875rem;
+	}
+
+	.cenBoxWrap .joinWrap .regiBox .regiBtn {
+		height: 50px;
+		line-height: 50px;
+		font-size: 1rem;
+	}
+
+	.cenBoxWrap .joinWrap {
+		padding: 100px 0 0 0;
+		width: 100%;
+	}
+
+	.cenBoxWrap .joinWrap02 input[type=checkbox] + label {
+		font-size: 0.875rem;
+		height: 20px;
+	}
+
+	.submitBtn.nextBtn {
+		width: 100%;
+		margin: 100px auto 0;
+	}
+
+	.submitBtn02 {
+		width: 90% !important;
+	}
+
+	.joinWrap .re_submitBtn {
+		margin: 0 auto 20px;
+		height: 50px;
+	}
+
+	.submitBtn03 {
+		width: 90% !important;
+	}
+
+	.cenBoxWrap.j_step3 {
+		padding: 100px 0 0 0;
+		width: 100%;
+	}
+
+	.cenBoxWrap.j_step5 {
+		padding: 100px 0 0 0;
+	}
+
+	.cenBoxWrap.j_step3 .m_wrap {
+		margin: 0 auto;
+		width: 86%;
+	}
+
+	.jt_center .jt_left .jtGray {
+		font-size: 1rem;
+	}
+
+	.jt_center .jt_left .jtBlack {
+		font-size: 1.250rem;
+	}
+
+	.joinTop {
+		padding: 15px 0 15px 0;
+		border-bottom: 0;
+	}
+
+	.joinInputWrap input {
+		font-size: 0.875rem;
+	}
+
+	.joinInputWrap input::placeholder {
+		font-size: 0.875rem;
+	}
+
+	.joinWrap02.step03 input::placeholder {
+		font-size: 0.875rem;
+	}
+
+	.joinInputWrap .ipt_smallbtn {
+		height: 32px;
+		bottom: 6px;
+	}
+
+	.joinInputWrap .ipt_smallbtn.widsame {
+		width: 70px;
+	}
+
+	.joinWrap02.step01_en .ipt_smallbtn {
+		font-size: 0.8rem;
+	}
+
+	.joinWrap02 .chkAll {
+		margin: 18px 0 20px 0;
+		padding-bottom: 30px;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.joinWrap02 .yesChk {
+		margin-bottom: 25px;
+		width: 80%;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.joinWrap02.step03 .ipt_smallbtn {
+		padding: 0 10px;
+	}
+
+	.joinWrap02 .yesLnk {
+		padding-top: 5px;
+	}
+
+	.joinWrap02.step03 .showPW {
+		margin-top: 24px;
+	}
+
+	.joinWrap02.step03 .joinInputWrap .ipt_smallbtn.widchange {
+		width: 128px;
+	}
+
+	.cenBoxWrap.j_step4 {
+		padding: 100px 0 0 0;
+		width: 100%;
+	}
+
+	.cenBoxWrap.j_step4 .joinTop {
+		margin: 0 auto;
+		width: 86%;
+	}
+
+	.j_idShowWrap {
+		padding: 20px 0;
+	}
+
+	.j_idShowWrap .j_idS_first {
+		margin-bottom:0;
+		font-size: 1rem;
+	}
+
+	.j_idShowWrap .j_idS_sec {
+		font-size: 1.375rem;
+	}
+
+	.cenBoxWrap .joinWrap.final {
+		padding: 36px 0 0 0;
+	}
+
+	.joinWrap .j_helloFirst {
+		font-size: 1.375rem;
+	}
+
+	.joinWrap .j_helloSec {
+		margin-bottom: 40px;
+		font-size: 0.938rem;
+		line-height: 1.5;
+	}
+
+	.joinWrap .submitBtn02  img {
+		height: 24px;
+	}
+
+	.joinWrap .submitBtn03 img {
+		height: 18px;
+	}
+
+	.joinWrap .re_submitBtn span {
+		font-size: 0.938rem;
+	}
+
+	.joinTop02 {
+		padding: 20px 0;
+	}
+
+	.joinTop02 .jt_center {
+		display: block;
+	}
+
+	.joinTop02 .jtSubDetail {
+		margin-top: 30px;
+		margin-left: 0;
+	}
+
+	.joinInputWrap {
+		margin-top: 30px;
+	}
+
+	.cenBoxWrap.padtop100 {
+		padding: 100px 0;
+	}
+
+	.submitBtn.nextBtn02 {
+		margin: 0;
+	}
+
+	.idChkShow {
+		margin-top: 30px;
+	}
+
+	.idChkShow span {
+		font-size: 1rem;
+	}
+
+	.idChkDet p {
+		font-size: 0.875rem;
+	}
+
+	.allIdFind {
+		font-size: 0.875rem;
+		font-size: 0.875rem;
+	}
+
+	.halfsBtn {
+		height: 50px;
+		font-size: 0.875rem;
+	}
+
+	#notifyMsg_wrap .notifyMsg {
+		width: 80%;
+		padding: 40px 0 30px 0;
+	}
+
+	#notifyMsg_wrap .notifyMsg p {
+		margin-bottom: 40px;
+		font-size: 1rem;
+	}
+
+	/*회원가입 로그인*/
+
+
+	/*제품등록*/
+
+	.topNav {
+		display: none !important;
+	}
+
+	.subWrap.pt80 {
+		padding-top: 80px;
+	}
+
+	.subWrap .cirStepWrap li {
+		height: 21px;
+	}
+
+	.subWrap .cirStepWrap li .cir {
+		width: 21px;
+		height: 21px;
+		font-size: 0.813rem;
+	}
+
+	.subWrap .stepTit {
+		font-size: 0.75rem;
+	}
+
+	.subTit_noshow {
+		display: none;
+	}
+
+	.subWrap .m_subtit_wrap {
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex; 
+		-webkit-box-pack: justify; 
+		-ms-flex-pack: justify; 
+		justify-content: space-between;
+	}
+
+	.subWrap .m_subtit_wrap .m_subtit {
+		display: block;
+		font-size: 1.125rem;
+	}
+
+	.subWrap .itemListBox li {
+		margin-bottom: 14px;
+		width: 48%;
+	}
+
+	.subWrap .itemListBox li .imgWrap {
+		height: 172px;
+	}
+
+	.subWrap .kindTitBox {
+		height: 42px;
+		font-size: 1.125rem;
+	}
+
+	.subWrap .serialImgWrap img {
+		width: 100%;
+	}
+
+	.subWrap .serialTbl table tr th {
+		width: 5%;
+	}
+
+	.subWrap .serialTbl table tr td {
+		width: 95%;
+	}
+
+	.subWrap .serialTbl table tr th .th_txt {
+		display: none;
+	}
+
+	.subWrap .serialTbl table tr td select {
+		width: 48%;
+	}
+
+	.popUpwrap .popUpBox {
+		width: 90%;
+		height: 252px;
+	}
+
+	.popUpwrap .popUpBox .textBox .txt01 {
+		font-size: 1.125rem;
+	}
+
+	.popUpwrap .popUpBox .textBox .txt02 {
+		font-size: 0.875rem;
+	}
+
+	.m_twoBtnWrap {
+		display: block !important;
+	}
+
+	.m_twoBtnWrap .twoBtn {
+		margin: 15px 0;
+	}
+
+	.twoBtnWrap .twoBtn {
+		width: 100%;
+		height: 40px;
+	}
+
+	.subWrap .finishAlarm, .subWrap .itemDetailTxt .itemTit {
+		font-size: 1.250rem;
+	}
+
+	.itemDetailTxt .itemDet {
+		font-size: 1rem;
+	}
+
+
+	/*제품등록*/
+
+	/*서비스접수*/
+    .c_center.wid100 {
+		width: 100%;
+	}
+	.ser_subTit {
+		margin-bottom: 30px;
+		font-size: 1.375rem;
+	}
+
+	.ser_subDet {
+		margin-bottom: 50px;
+		font-size: 1rem;
+	}
+
+	.serviceBox .serviceTit {
+		font-size: 1.250rem;
+	}
+
+	.serviceBox .serviceDet {
+		font-size: 1rem;
+	}
+
+	.serviceBox .regiBtn {
+		font-size: 1rem;
+	}
+
+	.grayCont .ser_whtBox.m_show {
+		display: block;
+	} 
+
+	.grayCont .ser_whtBox.m_none {
+		display: none;
+	} 
+
+	.stepImgWrap .serBnrWrap .firBnrTxt {
+		font-size: 1rem;
+	}
+
+	.stepImgWrap .serBnrWrap .secBnrTxt {
+		font-size: 0.875rem;
+	}
+
+
+	.grayCont .ser_center .whtBox_tit {
+		font-size: 1rem;
+	}
+
+	.grayCont .ser_whtBox .ser_regiBtn {
+		width: 95px;
+		height: 34px;
+		font-size: 0.875rem;
+	}
+
+	.grayCont .ser_center {
+		padding: 20px;
+	}
+
+	.grayCont .ser_center.topTit {
+		padding: 0 20px;
+	}
+
+	.c_center.m_wid100 {
+		width: 100%;
+	}
+
+	.grayCont .ser_center .grySmall {
+		width: 64%;
+		font-size: 0.875rem;
+	}
+	.grayCont .ser_whtBox .pplInfo li {
+		font-size: 0.875rem;
+	}
+	.ser_whtBox .ser_addr {
+		font-size: 0.875rem;
+	}
+	.ser_whtBox .newSerialBtn {
+		font-size: 0.875rem;
+	}
+	.grayCont .ser_whtBox .searchSerial {
+		font-size: 0.875rem;
+	}
+	.ser_whtBox .skyblueBtn {
+		font-size: 0.875rem;
+	}
+	.buyBasicInfo label {
+		font-size: 0.875rem;
+	}
+	.grayCont .ser_whtBox .selectWrap select {
+		font-size: 0.875rem;
+	}
+	.grayCont .ser_whtBox textarea {
+		font-size: 0.875rem;
+	}
+	.serviceBttm .cauGray {
+		font-size: 0.875rem;
+		text-align: left;
+	}
+	.serviceBttm {
+		width: 90%;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	.grayCont .ser_whtBox .item_tableWrap table tr {
+		height: 35px;
+	}
+	.grayCont .ser_whtBox .item_tableWrap table tr th {
+		font-size: 0.875rem;
+	}
+	.grayCont .ser_whtBox .item_tableWrap table tr td {
+		padding-left: 15px; 
+		font-size: 0.875rem;
+	}
+	.grayCont .ser_whtBox .item_tableWrap .delBtn {
+		font-size: 0.875rem;
+	}
+	.m_topNav { 
+		margin-top: 66px;
+	}
+
+	.twoBtnWrap02 .twoBtn {
+		height: 40px;
+	}
+
+	/*서비스접수*/
+
+}

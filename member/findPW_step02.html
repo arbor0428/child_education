@@ -1,0 +1,111 @@
+<?
+	include '../header.html';
+?>
+
+<div class="grayCont">
+	<div class="cenBoxWrap join padtop100">
+		<div class="joinTop02">
+			<div class="jt_center dp_f dp_c widchange">
+				<div class="jt_left">
+					<p class="jtBlack medium">비밀번호 찾기</p>
+				</div>
+				<div class="jt_right">
+					<p class="jtSubDetail">비밀번호를 찾기 위해 방법을 선택해주세요.</p>
+				</div>
+			</div>
+		</div>
+		<div class="joinWrap02 allFind_re02">
+			<div class="findbyWrap">
+				<div class="findbyBox">
+					<div class="findby blackChk">
+						<input id="findPhone" type="checkbox" autocomplete="off" checked>
+						<label for="findPhone" class="medium">등록된 휴대전화 번호로 찾기</label>
+					</div>
+					<!---체크박스에 체크했을때 나타나는 input 시작-->
+					<div class="inputFind">
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" value="홍길동" onkeypress="" autocomplete="off">
+							</div>
+						</div>
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" value="010-****-5678" onkeypress="" autocomplete="off">
+								<a class="submitBtn ipt_smallbtn dp_f dp_c dp_cc widsame" href="" title="인증요청">인증요청</a>
+							</div>
+						</div>
+
+						<!--인증번호 발송했을때 나타나는 input 시작-->
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" placeholder="인증번호를 입력해주세요." onkeypress="" autocomplete="off">
+								<a class="submitBtn ipt_smallbtn red dp_f dp_c dp_cc widsame" href="" title="확인">확인</a>
+							</div>
+						</div>
+						<div class="injChk">
+							<p class="timeChk">인증번호 유효시간 <span>02:55</span></p>
+						</div>
+						<!--인증번호 발송했을때 나타나는 input 끝-->
+					</div>
+					<!---체크박스에 체크했을때 나타나는 input 끝-->
+				</div>
+				<div class="findbyBox">
+					<div class="findby blackChk">
+						<input id="findEmail" type="checkbox" autocomplete="off">
+						<label for="findEmail" class="medium">등록된 이메일 주소로 찾기</label>
+					</div>
+					<!---체크박스에 체크했을때 나타나는 input 시작-->
+					<div class="inputFind" style="display:none;">
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" value="홍길동" onkeypress="" autocomplete="off">
+							</div>
+						</div>
+						<div class="joinInputWrap dp_sb dp_end">
+							<div class="emailInput">
+								<input type="text" name="" id="" class="wid100" value="say****** @ na***.com" onkeypress="" autocomplete="off">
+							</div>
+							<a class="submitBtn ipt_smallbtn dp_f dp_c dp_cc widsame p_rchange" href="" title="인증요청">인증요청</a>
+						</div>
+						<!--인증번호 발송했을때 나타나는 input 시작-->
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" placeholder="인증번호를 입력해주세요." onkeypress="" autocomplete="off">
+								<a class="submitBtn ipt_smallbtn red dp_f dp_c dp_cc widsame" href="" title="확인">확인</a>
+							</div>
+						</div>
+						<div class="injChk">
+							<p class="timeChk">인증번호 유효시간 <span>02:55</span></p>
+						</div>
+						<!--인증번호 발송했을때 나타나는 input 끝-->
+					</div>
+					<!---체크박스에 체크했을때 나타나는 input 끝-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    $("#findPhone").click(function(){
+        if($("#findPhone").is(":checked")){
+			$("#findPhone").parent(".findby").siblings(".inputFind").show();
+			$("#findEmail").parent(".findby").siblings(".inputFind").hide();
+			$("input:checkbox[id='findEmail']").prop("checked", false);
+        }else{
+			$("#findPhone").parent(".findby").siblings(".inputFind").hide();
+        }
+    });
+
+	$("#findEmail").click(function(){
+        if($("#findEmail").is(":checked")){
+			$("#findEmail").parent(".findby").siblings(".inputFind").show();
+			$("#findPhone").parent(".findby").siblings(".inputFind").hide();
+			$("input:checkbox[id='findPhone']").prop("checked", false);
+        }else{
+			$("#findEmail").parent(".findby").siblings(".inputFind").hide();
+        }
+    });
+</script>
+<?
+	include '../footer.html';
+?>

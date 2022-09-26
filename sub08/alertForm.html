@@ -1,0 +1,46 @@
+<div id="notifyMsg_wrap">
+	<div class="notifyMsg">
+		<a class="a_close" href="" title="닫기"><img src="../images/alarmClose.svg" alt="닫기"></a>
+		<p class="medium">
+			링크가 복사 되었습니다.<br>
+			원하는 곳에 붙여넣기 해주세요.
+		</p>
+		<a class="smallBtn" href="" title="확인" style="background-color: #000;">확인</a>
+	</div>
+</div>
+
+<style>
+	.a_close {
+		position: absolute;
+		right: 30px;
+		top:30px;
+	}
+</style>
+
+<script>
+	$("#notifyMsg_wrap").hide();
+
+	$(".shareBtn").on("click",function(event){
+
+        event.preventDefault();
+
+        $("#notifyMsg_wrap").stop().fadeIn();
+
+    });
+
+	$(".a_close").on("click",function(event){
+
+        event.preventDefault();
+
+        $("#notifyMsg_wrap").stop().fadeOut();
+
+    });
+
+	$(".smallBtn").on("click",function(event){
+
+        event.preventDefault();
+
+        $("#notifyMsg_wrap").stop().fadeOut();
+
+    });
+</script>

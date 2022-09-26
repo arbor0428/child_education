@@ -1,0 +1,35 @@
+<?
+	include '../header.html';
+?>
+
+	<div class="grayCont">
+		<div class="cenBoxWrap login vh100">
+			<div class="loginWrap">
+				<p class="loginTit medium">로그인</p>
+				<div class="inputWrap mb54">
+					<img src="/images/sub/idImg.png" alt="id">
+					<input type="text" name="userid" id="userid" class="" placeholder="아이디" onkeypress="" autocomplete="off">
+				</div>
+				<div class="inputWrap">
+					<img src="/images/sub/pwImg.png" alt="password">
+					<input type="password" name="passwd" id="passwd" class="" placeholder='비밀번호' onkeypress="" autocomplete="off">
+				</div>
+				<div class="inputWrap02">
+					<input id="reIdChk" type="checkbox">
+					<label for="reIdChk">ID 기억하기</label>
+				</div>
+				<a class="loginBtn medium" href="" title="로그인">로그인</a>
+				<div class="subBtnWrap dp_f dp_c">
+					<a class="findBtn medium" href="/member/findID_step01.html" title="">아이디 찾기</a>
+					<span>/</span>
+					<a class="findBtn medium" href="/member/findPW_step01.html" title="">비밀번호 찾기</a>
+					<div class="line"><!--구분선--></div>
+					<a class="joinBtn medium" href="/member/join.html" title="">회원가입</a>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+<?
+	include '../footer.html';
+?>

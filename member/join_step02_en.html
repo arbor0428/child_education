@@ -1,0 +1,119 @@
+<?
+	include '../header.html';
+?>
+
+<div class="grayCont">
+	<div class="cenBoxWrap join flcul j_step3">
+		<div class="m_wrap">
+			<div class="joinTop">
+				<div class="jt_center dp_sb">
+					<div class="jt_left">
+						<p class="jtGray medium">Membership</p>
+						<p class="jtBlack medium">회원가입(국외)</p>
+					</div>
+					<div class="jt_right">
+						<div class="jtrCirwrap dp_f dp_c">
+							<div class="jtrCir dp_f dp_c dp_cc">1</div>
+							<div class="jtrLine"></div>
+							<div class="jtrCir dp_f dp_c dp_cc on">2</div>
+							<div class="jtrLine"></div>
+							<div class="jtrCir dp_f dp_c dp_cc">3</div>
+							<div class="jtrLine"></div>
+							<div class="jtrCir dp_f dp_c dp_cc">4</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="joinWrap02">
+				<div class="chkAll">
+					<input id="chkAll01" type="checkbox" autocomplete="off">
+					<label for="chkAll01" class="bold2">Agree to all of the following terms and conditions</label>
+				</div>
+				<div class="yesChkWrap">
+					<div class="dp_sb">
+						<div class="yesChk blackChk">
+							<input id="yesChk01" type="checkbox" autocomplete="off">
+							<label for="yesChk01" class="medium">Terms of Service</label>
+							<span class="red medium">(required)</span>
+						</div>
+						<a class="yesLnk" href="" title="">
+							<span class="showCon">view</span>
+							<span class="lnr lnr-chevron-up"></span>
+							<span class="lnr lnr-chevron-down"></span>
+						</a>
+					</div>
+					<div class="yesFulldwn">
+						<!--약관동의내용보기---->	
+					</div>
+				</div>
+				<div class="yesChkWrap">
+					<div class="dp_sb">
+						<div class="yesChk blackChk">
+							<input id="yesChk02" type="checkbox" autocomplete="off">
+							<label for="yesChk02" class="medium">Privacy Policy</label>
+							<span class="red medium">(required)</span>
+						</div>
+						<a class="yesLnk blackChk" href="" title="">
+							<span class="showCon">view</span>
+							<span class="lnr lnr-chevron-up"></span>
+							<span class="lnr lnr-chevron-down"></span>
+						</a>
+					</div>
+					<div class="yesFulldwn">
+						<!--약관동의내용보기---->	
+					</div>
+				</div>
+				<div class="yesChkWrap">
+					<div class="dp_sb">
+						<div class="yesChk blackChk">
+							<input id="yesChk03" type="checkbox" autocomplete="off">
+							<label for="yesChk03" class="medium">Receive promotional information <span class="gray medium">(Option)</span></label>
+						</div>
+						<a class="yesLnk" href="" title="">
+							<span class="showCon">view</span>
+							<span class="lnr lnr-chevron-up"></span>
+							<span class="lnr lnr-chevron-down"></span>
+						</a>
+					</div>
+					<div class="yesFulldwn">
+						<!--약관동의내용보기---->	
+					</div>
+				</div>
+				<p class="eventRefer">You can get useful information or news about the event (such as discounts).</p>
+			</div>
+		</div>
+		<a class="submitBtn nextBtn dp_f dp_c dp_cc" href="join_step03_en.html" title="Next">Next</a>
+	</div>
+</div>
+ 
+<script>
+	//동의 상세 펼치기 접기
+	$(".yesLnk").on("click",function(event){
+		event.preventDefault();
+
+		if($(this).hasClass("on")){
+
+			$(this).removeClass("on");
+			$(this).parent().siblings(".yesFulldwn").slideUp();
+
+		} else {
+
+			$(this).addClass("on");
+			$(this).parent().siblings(".yesFulldwn").slideDown();
+		}
+    });
+
+	// 체크박스 전체 선택
+	$(".joinWrap02").on("click", "#chkAll01", function () {
+		var checked = $(this).is(":checked");
+
+		if(checked){
+			$(this).parents().parents(".joinWrap02").children(".yesChkWrap").children().children().find('input').prop("checked", true);
+		} else {
+			$(this).parents().parents(".joinWrap02").children(".yesChkWrap").children().children().find('input').prop("checked", false);
+		}
+	});
+</script>
+<?
+	include '../footer.html';
+?>

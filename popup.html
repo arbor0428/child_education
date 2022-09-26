@@ -1,0 +1,67 @@
+<div id="popupWrap">
+    <div class="popupBox">
+        <div class="popupSlick">
+            <div class="popupImg popBox01">
+                <a href="" title="자세히보기">
+                   
+                </a>
+            </div>
+            <div class="popupImg popBox02">
+                <a href="" title="자세히보기">
+                   
+                </a>
+            </div>
+            <div class="popupImg popBox03">
+                <a href="" title="자세히보기">
+                   
+                </a>
+            </div>
+            <div class="popupImg popBox04">
+                <a href="" title="자세히보기">
+                   
+                </a>
+            </div>
+            <div class="popupImg popBox05">
+                <a href="" title="자세히보기">
+                   
+                </a>
+            </div>
+        </div>
+        <div class="popBotTxt dp_sb">
+            <div class="popChkWrap dp_f">
+                <div class="popChk">
+                    <input id="neveropen" type="checkbox" autocomplete="off">
+                    <label for="neveropen">오늘 다시 보지 않기</label>
+                </div>
+            </div>
+            <div class="popCloseBtn">
+                <a class="popClose bold2" href="" title="닫기">닫기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #popupWrap .popupSlick .popBox01 {background-image: url("images/popup/main_popup01.png");}
+    #popupWrap .popupSlick .popBox02 {background-image: url("images/popup/main_popup01.png");}  
+    #popupWrap .popupSlick .popBox03 {background-image: url("images/popup/main_popup01.png");}  
+    #popupWrap .popupSlick .popBox04 {background-image: url("images/popup/main_popup01.png");}  
+    #popupWrap .popupSlick .popBox05 {background-image: url("images/popup/main_popup01.png");}    
+</style>
+
+<script>
+    $('.popupSlick').slick({ 
+        fade: false,
+        dots : true,
+        arrows : true,	
+        autoplay : true,			// 자동 스크롤 사용 여부
+        autoplaySpeed : 4000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+    });
+
+    $(".popClose").on("click",function(event){
+        
+		event.preventDefault();
+        $("#popupWrap").stop().fadeOut();
+
+    });
+</script>

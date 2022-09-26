@@ -1,0 +1,156 @@
+<?
+	include '../header.html';
+?>
+
+<div class="topNav dp_f dp_c">
+	<ul class="topMenu dp_f dp_c">
+		<li><a class="dp_f dp_c" href="/" title="home"><img src="../images/sub/home.png"></a></li>
+		<li><a href="" title="">> 제품 등록</a></li>
+	</ul>
+</div>
+
+<div class="m_topNav txt-c">
+	제품등록하기
+</div>
+
+<div class="subWrap">
+	<div class="c_center">
+		 <p class="subTit subTit_noshow">
+			 제품 등록하기
+			<span>제품의 모델명과 시리얼번호를 입력해주세요</span>
+		 </p>
+		<div class="m_subtit_wrap">
+			<p class="m_subtit">제품 정보를 등록해주세요</p>
+			<div>
+				 <ul class="cirStepWrap dp_f">
+					<li class="dp_f dp_cc dp_c">
+						<div class="cir dp_f dp_c dp_cc">1</div>
+					</li>
+					<li class="dp_f dp_cc dp_c">
+						<span class="lineBar"><!--라인--><span>
+					</li>
+					<li class="on dp_f dp_cc dp_c">
+						<div class="cir dp_f dp_c dp_cc">2</div>
+					</li>
+					<li class="dp_f dp_cc dp_c">
+						<span class="lineBar"><!--라인--><span>
+					</li>
+					<li class="dp_f dp_cc dp_c">
+						<div class="cir dp_f dp_c dp_cc">3</div>
+					</li>
+				 </ul>
+				 <p class="stepTit" style="margin-left: 45px;">시리얼 등록</p>
+			</div>
+		</div>
+
+		<div class="serialImgWrap dp_f dp_cc dp_c">
+			<img src="/images/sub/serial_number.png">
+		</div>
+		<div class="serialTbl">
+			<table>
+				<tbody>
+					<tr>
+						<th>
+							<div class="dp_f dp_c">
+								<span class="red">*</span>
+								<span class="th_txt">시리얼 번호 S/N</span>
+							</div>
+						</th>
+						<td>
+							<input type="text" placeholder="시리얼 번호를 입력하세요.">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="red">*</span>
+							<span class="th_txt">제품명</span>
+						</th>
+						<td>
+							<span class="skyblue">시리얼 번호를 입력하시면 자동으로 표기됩니다.</span>
+							<span style="display: none;">레인보우펜 CR3-4BS</span> <!---자동으로 표시 될때 display: block; 처리 되어야함--->
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="red">*</span>
+							<span class="th_txt">구입시기</span>
+						</th>
+						<td>
+							<div>
+								<select name="" id="">
+									<option value="">구입년도</option>
+								</select>
+								<span class="line"><!--구분선--></span>
+								<select name="" id="">
+									<option value="">구입 월</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="red">*</span>
+							<span class="th_txt">구매처</span>
+						</th>
+						<td>
+							<input type="text" placeholder="구매처를 입력해주세요. 예) 세이몰">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="twoBtnWrap dp_f dp_cc dp_c">
+			<a class="twoBtn dp_f dp_cc dp_c" href="" title="이전">이전</a>	
+			<a class="twoBtn dp_f dp_cc dp_c" href="itemRegister_step3.html" title="등록">등록</a>		
+		</div>
+
+	</div>
+</div>
+
+<div class="popUpwrap">
+	<div class="popUpBox dp_f dp_cc dp_c">
+		<a class="closeBtn" href="" title="닫기"><img src="../images/sub/modal_close01.png" alt=""></a>
+		<div class="textBox">
+			<div class="chageBox">
+				<p class="txt01 txt-c">미등록 시리얼입니다.<br>1:1 문의 or 고객센터로 문의해주세요.</p>
+				<p class="txt01 txt-c" style="display: none;"><span class="red">다른 아이디</span>로 등록된 시리얼 넘버입니다.<br>시리얼 넘버를 다시 확인해주세요.</p>
+			</div>
+			<p class="txt02 txt-c">세이펜 고객센터/1588-0593</p>
+			<div class="cir_btnWrap dp_f dp_cc dp_c">
+				<a class="cir_btn dp_f dp_cc dp_c" href="" title="취소">취소</a>
+				<a class="cir_btn dp_f dp_cc dp_c" href="" title="확인">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+
+		$(".twoBtnWrap .twoBtn").on("click",function(event){
+			event.preventDefault();
+			$(".popUpwrap").stop().fadeIn();
+		});
+
+		$(".popUpwrap .closeBtn").on("click",function(event){
+			event.preventDefault();
+			$(".popUpwrap").stop().fadeOut();
+		});
+	});
+</script>
+
+<style>
+	@media (max-width:698px) { 
+		header {
+			border-bottom: 1px solid #BFBFBF;
+		}
+		.subWrap .stepTit {
+			margin-left: 30px !important;
+		}
+	}
+</style>
+
+<?
+	include '../footer.html';
+?>

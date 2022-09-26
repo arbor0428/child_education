@@ -1,0 +1,95 @@
+<?
+	include '../header.html';
+?>
+
+<div class="grayCont">
+	<div class="cenBoxWrap join vh100 flcul">
+		<div class="m_wrap">
+		<div class="joinTop02">
+			<div class="jt_center dp_f dp_c">
+				<div class="jt_left">
+					<p class="jtBlack medium">아이디 찾기</p>
+				</div>
+				<div class="jt_right">
+					<p class="jtSubDetail medium">아이디를 찾기 위해 방법을 선택해주세요.</p>
+				</div>
+			</div>
+		</div>
+		<div class="joinWrap02">
+			<div class="findbyWrap">
+				<div class="findbyBox">
+					<div class="findby blackChk">
+						<input id="findPhone" type="checkbox" autocomplete="off" checked>
+						<label for="findPhone" class="medium">휴대전화 번호로 찾기</label>
+					</div>
+					<div class="inputFind">
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" placeholder="이름" onkeypress="" autocomplete="off">
+							</div>
+						</div>
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" placeholder="휴대전화 번호" onkeypress="" autocomplete="off">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="findbyBox">
+					<div class="findby blackChk">
+						<input id="findEmail" type="checkbox" autocomplete="off">
+						<label for="findEmail" class="medium">이메일 주소로 찾기</label>
+					</div>
+					<div class="inputFind" style="display: none;">
+						<div class="joinInputWrap dp_sb">
+							<div class="txtInputWrap dp_f dp_end wid100">
+								<input type="text" name="" id="" class="" placeholder="이름" onkeypress="" autocomplete="off">
+							</div>
+						</div>
+						<div class="joinInputWrap dp_sb dp_end">
+							<div class="emailInput">
+								<input type="text" name="" id="" class="wid100" placeholder="E - Mail" onkeypress="" autocomplete="off">
+							</div>
+							<span class="gray_email">@</span>
+							<div class="emailSel">
+								<select name="" id="">
+									<option value=""></option>
+									<option value="">naver.com</option>
+									<option value="">hanmail.net</option>
+									<option value="">gmail.com</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<a class="submitBtn nextBtn02 dp_f dp_c dp_cc" href="findID_step02.html" title="다음">다음</a>
+	</div>
+</div>
+
+<script>
+    $("#findPhone").click(function(){
+        if($("#findPhone").is(":checked")){
+			$("#findPhone").parent(".findby").siblings(".inputFind").show();
+			$("#findEmail").parent(".findby").siblings(".inputFind").hide();
+			$("input:checkbox[id='findEmail']").prop("checked", false);
+        }else{
+			$("#findPhone").parent(".findby").siblings(".inputFind").hide();
+        }
+    });
+
+	$("#findEmail").click(function(){
+        if($("#findEmail").is(":checked")){
+			$("#findEmail").parent(".findby").siblings(".inputFind").show();
+			$("#findPhone").parent(".findby").siblings(".inputFind").hide();
+			$("input:checkbox[id='findPhone']").prop("checked", false);
+        }else{
+			$("#findEmail").parent(".findby").siblings(".inputFind").hide();
+        }
+    });
+</script>
+<?
+	include '../footer.html';
+?>

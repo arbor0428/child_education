@@ -10,13 +10,19 @@
 	</ul>
 </div>
 
+<div class="m_topNav txt-c">
+	배송지 정보 변경
+</div>
+
 <div class="c_center">
 	<p class="ser_subTit02">배송지 정보 변경</p>
 </div>
 
-<div class="grayCont" style="padding: 70px 0 240px 0;">
+<div class="grayCont">
 	<div class="c_center">
 		<a class="addrADDbtn dp_f dp_c dp_cc" href="./itemService_addAdr.html" title="배송지 추가">+ 배송지 추가</a>
+	</div>
+	<div class="c_center m_wid100">
 		<div class="ser_whtBox">
 			<div class="ser_center lineBot dp_sb dp_c">
 				<p class="whtBox_tit bold2 dp_f dp_c topTit">기본배송지</p>
@@ -60,6 +66,25 @@
 	</div>
 </div>
 
+<style>
+	.grayCont {padding: 70px 0 240px 0;}
+	@media (max-width:1022px) { 
+		header {
+			border-bottom: 1px solid #BFBFBF;
+		}
+		.grayCont {
+			padding: 4px 0 70px 0; 
+			background-color: #F2F2F2;
+		}
+		.subWrap02 {
+			padding-top: 0;
+		}
+		.addrADDbtn {
+			margin: 30px 0;
+			font-size: 1rem;
+		}
+	}
+</style>
 <?
 	include '../footer.html';
 ?>

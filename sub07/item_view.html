@@ -23,7 +23,7 @@
 		</p>
         <div class="m_topTit dp_sb">
             <span>레인보우펜</span>
-            <a class="shareBtn dp_f dp_c dp_cc" href="" title="">
+            <a class="shareBtn dp_f dp_c dp_cc" href="javascript:CopyDirect();" title="">
                 <img src="../images/sub/gry_share.png" alt="">
             </a>
         </div>
@@ -36,7 +36,7 @@
         <div class="saleTxtWrap">
             <div class="topTit dp_sb">
                 <span class="">레인보우펜</span>
-                <a class="shareBtn dp_f dp_c dp_cc" href="" title="">
+                <a class="shareBtn dp_f dp_c dp_cc" href="javascript:CopyDirect();" title="">
                     <img src="../images/sub/gry_share.png" alt="">
                 </a>
             </div>
@@ -138,6 +138,10 @@
     </div>
 </div>
 
+<a class="m_topBtn">
+	<img src="../images/sub/topBnr.png" alt="">
+</a>
+
 <script>
     $(".inTroTabBtn > li").on("click",function(event){
 
@@ -152,6 +156,19 @@
         $(".inTroTabBoxWrap .inTroTabBox").eq(tabNumber).show();
 
     });
+
+    // 맨위로 가기	    
+    $('.m_topBtn').click(function(){
+        $('html, body').animate({scrollTop:0}, 400);
+        return false;
+    });	
+</script>
+
+<script>
+	function CopyDirect(){
+       prompt("Ctrl+C를 눌러 주소를 복사해 주시기 바랍니다.", "주소값");
+   }
+
 </script>
 
 <style>

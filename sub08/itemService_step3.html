@@ -160,6 +160,27 @@
 	</div>
 </div>
 
+<div class="asDetailWrap">
+	<div class="asDetailBox">
+		<a class="closeBtn" href="" title="닫기"><img src="../images/sub/modal_close01.png" alt=""></a>
+		<img src="../images/sub/serviceStep_bnr_m.png" alt="as 접수 절차">
+	</div>
+</div>
+
+<script>
+	$(function(){
+		$(".grayCont .ser_whtBox .ser_regiBtn").on("click",function(event){
+			event.preventDefault();
+			$(".asDetailWrap").stop().fadeIn();
+		});
+
+		$(".asDetailBox .closeBtn").on("click",function(event){
+			event.preventDefault();
+			$(".asDetailWrap").stop().fadeOut();
+		});
+	});
+</script>
+
 <div class="serviceBttm">
 	<div class="twoBtnWrap dp_f dp_cc dp_c">
 		<a class="twoBtn dp_f dp_cc dp_c" href="itemService_step2.html" title="이전">이전</a>	

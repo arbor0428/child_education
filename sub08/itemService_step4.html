@@ -9,12 +9,20 @@
 		<li><a href="" title="">> 온라인 AS 접수</a></li>
 	</ul>
 </div>
+
+<div class="m_topNav txt-c">
+	온라인 AS 접수
+</div>
+
 <div class="subWrap">
-	<div class="c_center">
+	<div class="c_center m_wid100">
 		<p class="asFinish_tit">AS 접수 <span class="red03 bold2">(2건)</span> 완료되었습니다.</p>
 		<div class="asFin_imgWrap">
-			<img src="../images/sub/as_finish.png" alt="">
+			<img class="pc_img" src="../images/sub/as_finish.png" alt="">
+			<img class="m_img" src="../images/sub/as_finish_m.png" alt="">
 		</div>
+	</div>
+	<div class="c_center">
 		<div class="serviceBttm02">
 			<div class="twoBtnWrap02 dp_f dp_cc dp_c">
 				<a class="twoBtn dp_f dp_cc dp_c dark c_w" href="itemService_step3.html" title="AS 접수 목록 보기">AS 접수 목록 보기</a>	
@@ -23,7 +31,17 @@
 		</div>
 	</div>
 </div>
-
+<style>
+	@media (max-width:1022px) { 
+		header {
+			border-bottom: 1px solid #BFBFBF;
+		}
+		.grayCont {
+			padding: 0 0 30px 0; 
+			background-color: #F2F2F2;
+		}
+	}
+</style>
 <?
 	include '../footer.html';
 ?>

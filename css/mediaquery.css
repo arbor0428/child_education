@@ -18,6 +18,9 @@
     .c_center {
 		width: 98%;
 	}
+	.saleIntroWrap {
+		width: 100%;
+	}
     .cont04 .eventBtnWrap .eventBtn .eImgWrap {width: 98%; height: 212px;}
 	/*
     .visual .visualSlick .slick-prev {
@@ -27,9 +30,47 @@
 		right: 25%;
 	}*/
 
+	.boardCont img {
+		width: 100%;
+	}
+
+	.itemIntro_wrap .searchChkBox {
+		width: 98%;
+	}
+	.itemIntro_wrap .searchBarWrap {
+		width: 89%;
+	}
+	.bookAbtnailWrap .bookAbtnail {
+		width: 33.333%;
+	}
+	.bookAbtnailWrap .bookAbtnail:nth-child(4) {
+		padding: 54px 0;
+	}
+	.bookAbtnailWrap .bookAbtnail:nth-child(9) {
+		border-bottom: 1px solid #A5A5A5;
+	}
+	.searchChkBox .row label {
+		font-size: 0.875rem;
+	}
+	.itemIntro_wrap .searchChkBox .row .row_det {
+		padding: 0 20px;
+	}
+	.itemIntro_wrap .searchChkBox .row:nth-child(4) .row_det {
+		padding: 10px 20px;
+	}
 }
 
 @media (max-width:1022px){	
+	.m_topBtn {
+		position: fixed;
+		right: 20px;
+		bottom: 50px;
+		display: block;
+		z-index: 990;
+	}
+	.m_topBtn img {
+		height: 60px;
+	}
     header {
         position: fixed;
         top: 0;
@@ -325,29 +366,29 @@
         display: none;
     }
 
-    .cont02 .sixIconWrap {
+    .sixIconWrap {
         -ms-flex-wrap: wrap; flex-wrap: wrap;
     }
 
-    .cont02 .sixIconWrap .sixIcon {
+    .sixIconWrap .sixIcon {
         flex-basis: auto;
         width: 31.333%;
         margin: 0 1%;
     }
 
-    .cont02 .sixIconWrap .sixIcon:nth-child(1), 
-    .cont02 .sixIconWrap .sixIcon:nth-child(2), 
-    .cont02 .sixIconWrap .sixIcon:nth-child(3) {
+    .sixIconWrap .sixIcon:nth-child(1), 
+    .sixIconWrap .sixIcon:nth-child(2), 
+    .sixIconWrap .sixIcon:nth-child(3) {
         margin-bottom: 40px;
     }
 
-    .cont02 .sixIconWrap .sIconImg {
+    .sixIconWrap .sIconImg {
         margin: 0 auto;
         width: 90px;
         height: 90px;
     }
 
-    .cont02 .sixIconWrap .sixIcon:hover .sIconImg {
+    .sixIconWrap .sixIcon:hover .sIconImg {
         box-shadow:0 2px 10px rgba(0,0,0,0.4);
     }
 
@@ -471,18 +512,317 @@
 	.stepImgWrap .serBnrWrap .secBnrTxt {
 		color: #616161;
 	}
+	.topNav {
+		display: none !important;
+	}
+	.board_tit  {
+		display: none !important;
+	}
+	.ser_subTit02 {
+		display: none;
+	}
+
 	.m_topNav {
-		margin-top: 25px;
+		margin-top: 72px;
 		padding: 20px 0;
 		display: block;
 		border-bottom: 1px solid #BFBFBF;
 		font-size: 1.125rem;
 		font-weight: 500;
 	}
-	.ser_subTit02 {
+
+	.subTit_noshow {
 		display: none;
 	}
 
+	.subWrap .m_subtit_wrap {
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex; 
+		-webkit-box-pack: justify; 
+		-ms-flex-pack: justify; 
+		justify-content: space-between;
+	}
+
+	.subWrap .m_subtit_wrap .m_subtit {
+		display: block;
+		font-size: 1.125rem;
+	}
+
+	.s_topNav {
+		margin-top: 74px;
+	}
+
+	/*제품소개*/
+	.itemTabWrap .itemTabBox .itemDetailWrap li {
+		width: 50%;
+	}
+	.itemIntro_wrap .m_topTit {
+		display: flex;
+	}
+
+	.saleIntroWrap {
+		display: block !important;
+	}
+
+	.saleTxtWrap .topTit {
+		display: none;
+	}
+	.saleIntroWrap .saleImgWrap {
+		margin: 0 auto;
+		width: 90%;
+		height: auto;
+	}
+	.saleIntroWrap .saleImgWrap img {
+		width: 100%;
+	}
+	.itemIntro_wrap .m_topTit {
+		margin: 15px auto;
+		width: 90%;
+		font-size: 1.250rem;
+		font-weight: 700;
+	}
+	.saleTxtWrap {
+		width: 100%;
+		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex;
+		flex-direction: column;
+	}
+	.itemDetailWrap02 {
+		width: 100%;
+		background-color: #F2F2F2;
+		order: 2;
+	}
+	.saleTxtWrap .itemDetail {
+		margin: 30px auto;
+		width: 90%;
+	}
+	.saleTxtWrap .buyBtn {
+		order: 1;
+	}
+	.saleTxtWrap .itemDetail tr {
+		height: 40px;
+		border-bottom: none;
+	}
+	.modelSeriWrap .modelSeri {
+		margin-top: 20px;
+		-ms-flex-wrap: wrap; 
+		flex-wrap: wrap;
+		justify-content: left;	
+	}
+	.modelSeriWrap .modelSeri li {
+		margin: 0 1% 10px;
+		width: 48%;
+	}
+	.inTroTabBtnWrap .inTroTabBtn li a {
+		font-size: 0.875rem;
+	}
+	.inTroTabBtnWrap {
+		margin: 50px 0 30px 0;
+	}
+	.modelSeriWrap .modelSeri li span {
+		font-size: 1rem;
+	}
+	/*제품소개*/
+	
+	.itemIntroBnr  {
+		display: none !important;
+	}
+
+	.bookAbtnailWrap .bookAbtnail {
+		width: 50%;
+	}
+
+	.bookAbtnailWrap .bookAbtnail:nth-child(3) {
+		padding: 54px 0;
+	}
+
+	.bookAbtnailWrap .bookAbtnail:nth-child(10) {
+		border-bottom: 1px solid #A5A5A5;
+	}
+
+	.itemIntro_wrap .searchChkBox {
+		width: 100%;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	.itemIntro_wrap .searchChkBox .row {
+		border-bottom: 1px solid #BFBFBF;
+	}
+
+	.itemIntro_wrap {
+		padding-top: 0;
+	}
+
+	.searchChkBox.mtDiffer {
+		margin-top: 0;
+		border-top: none !important;
+	}
+	.itemIntro_wrap .searchChkBox .row .row_tit {
+		padding: 10px 10px 10px 20px;
+		border-right: none;
+		background-color: #E6E6E6;
+	}
+	.itemIntro_wrap .searchChkBox .row .row_det {
+		background-color: #f9f9f9;
+	}
+	.searchChkBox .row label {
+		margin: 10px 0;
+		width: 33.333%;
+	}
+	.itemIntro_wrap .searchChkBox .row:nth-child(4) .row_det {
+		padding: 0 20px;
+	}
+	.itemIntro_wrap .searchChkBox .row.rt_row {
+		padding: 10px 20px;
+	}
+
+	.searchBarWrap .searchBar {
+		position: relative;
+	}
+	.searchBarWrap .searchBar input {
+		width: 100%;
+		border: 1px solid #707070
+	}
+	.searchBarWrap .searchBar .bookSearchBtn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 15px;
+		width: 35px;
+		height: 35px;
+		background-repeat: no-repeat; 
+		background-position: center center;
+		background-size: 100% 100%;
+		background-image: url("../images/search.png");
+		background-color: transparent;
+	}
+	.searchBarWrap .searchBar .bookSearchBtn span {
+		display: none;
+	}
+
+	.itemdet_wrap {
+		padding-top: 0;
+	}
+
+	.itemdet_wrap .c_center {
+		width: 100%;
+	}
+	
+	.itemdet_wrap .itemDetTop {
+		display: block !important;
+	}
+	.itemdet_wrap .itemdet_img img {
+		width: 100%;
+	}
+	.itemdet_wrap .itemDetTop .itemdet_txt {
+		width: 100%;
+	}
+	.itemdet_wrap .itemdet_txt_top {
+		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 94%;
+	}
+	.itemdet_wrap .itemdet_txt_bot .itemdet_tbl {
+		margin: 0 auto;
+		width: 94%;
+	}
+	.itemdet_wrap .itemdet_txt_bot .aplyshareBtn {
+		right: 3%;
+	}
+	.itemdet_wrap .itemdetContWrap {
+		padding: 0 0 102px 0;
+	}
+	.itemdet_wrap .itemdetContWrap .pc_itemdetCont {
+		display: none;
+	}
+	.itemdet_wrap .itemdetContWrap .m_itemdetCont {
+		display: block;
+	}
+	.m_topNav {
+		position: relative
+	}
+	.m_topNav .m_topNav_center {
+		margin: 0 auto;
+		width: 90%;
+	}
+	.m_topNav .bookSelCont {
+		display: none;
+		position: absolute;
+		top: 67px;
+		right: 0;
+		width: 100%;
+		z-index: 33;
+	}
+
+	.m_topNav .bookSelBtn img {
+		margin-right: 10px;
+	}
+	.m_topNav .bookSelBtn .bookSelarrow {
+		margin-left: 10px;
+		font-size: 0.875rem;
+	}
+
+	.m_topNav .bookSelCont .bookSelCont_top {
+		background-color: #000000;
+		height: 56px;
+		color: #fff;
+		padding: 0 20px;
+	}
+	.m_topNav .bookSelCont .bookSelCont_top .bookSelTit {
+		font-size: 0.875rem;
+	}
+	.m_topNav .bookSelCont_list {
+
+		border-left: 1px solid #707070;
+		border-right: 1px solid #707070;
+		border-bottom: 1px solid #707070;
+		background-color: #fff;
+		overflow-y: scroll;
+		height:420px;
+	}
+	.m_topNav .bookSelCont_list .row {
+		border-bottom: 1px solid #D8D8D8;
+		padding: 0 20px;
+		box-sizing: border-box;
+		height: 35px;	
+		font-size: 0.875rem;
+	}
+	.m_topNav .bookSelCont_list .row .row_img {
+		margin-right: 30px;
+	}
+	.m_topNav .bookSelInput {
+		position: relative;	
+		width: 200px;
+		height: 28px;
+	}
+	
+	.m_topNav .bookSelInput input {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 20px;
+		padding: 0 30px;
+		box-sizing: border-box;
+	}
+	.m_topNav .bookSelInput .bookSearchBtn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 15px;
+		width: 18px;
+		height: 18px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% 100%;
+		background-image: url('../images/search.png');
+		background-color: transparent;
+	}
 }
 
 @media (max-width:900px) {
@@ -498,6 +838,177 @@
 		width: 96%;
 	}
 	/*제품등록*/
+
+	/*온라인 as 접수*/
+	.asFin_imgWrap {
+		border-radius: 0;
+	}
+
+	.pc_img {
+		display: none;
+	}
+
+	.m_img {
+		display: block;
+	}
+
+	.subWrap {
+		padding-bottom: 50px;
+	}
+
+	.serviceBttm02 {
+		margin: 30px 0 0 0;
+	}
+
+	.subWrap .asFinish_tit {
+		margin: 40px 0 40px 0;
+		font-size: 1.250rem;
+	}
+	.subWrap02 .topBnrWrap.m_none {
+		display: none;
+	}
+	.mapWhole {
+		flex-direction: column;
+	}
+	.subWrap02 .mapWhole .mapWrap {
+		order: 2;
+		width: 100%;
+		margin-right: 0;
+	}
+	.subWrap02 .mapWhole .mapInfoWrap {
+		order: 1;
+		width: 100%;
+	}
+
+	.subWrap02 .mapWhole .mapInfoWrap .pc_showBox {
+		display: none;
+	}
+	.subWrap02 .m_showBox {
+		margin-top: 20px;
+		display: block;
+	}
+	.subWrap02 .mapInfo .mapDetail {
+		font-size: 0.875rem;
+	}
+	.subWrap02 .mapInfo .mapDetail .det {
+		margin-top: 10px;
+	}
+
+	.subWrap02 .mapWhole .mapWrap #map {
+		height: 400px;
+	}
+
+	.grayCont .ser_whtBox.addAdr {
+		width: 100%;
+	}
+	.addrFormWrap {
+		width: 90%;
+	}
+	.itemIntroBnr .pc_img {
+		display: none;
+	}
+	
+	.itemIntroBnr .m_img {
+		display: block;
+	}
+	.itemIntro_wrap {
+		padding-top: 0;
+	}
+	.modelSeriWrap .modelSeri li {
+		padding: 0 10px;
+		height: 50px;
+	}
+	.modelSeriWrap .modelSeri li span {
+		font-size: 0.875rem;
+	}
+	.modelSeriWrap .modelSeri li a img {
+		height: 60%;
+	}
+	.inTroTabBtnWrap .inTroTabBtn li {
+		margin: 0 10px;
+		padding: 22px 0;
+	}
+	.itemIntro_wrap .shareBtn {
+		width: 35px;
+		height: 35px;
+	}
+	.itemIntro_wrap .shareBtn img {
+		height: 60%;
+	}
+
+	.searchChkBox .row label {
+		font-size:  0.75rem;
+	}
+
+	.itemIntro_wrap .searchChkBox .row .row_tit {
+		padding: 10px 15px;
+	}
+
+	.itemIntro_wrap .searchChkBox .row .row_det {
+		padding: 0 10px;
+	}
+	.itemIntro_wrap .searchChkBox .row:nth-child(4) .row_det {
+		padding: 0 10px;
+	}
+	.searchChkBox .checkReset, .searchChkBox .setToggl {
+		font-size: 0.875rem;
+	}
+	.searchChkBox .checkReset .chkResetBtn img {
+		height: 20px;
+	}
+	.searchChkBox .setToggl .setTogglBtn {
+		width: 20px;
+		height: 22px;
+		background-size: 21px 23px;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt {
+		padding: 11px 10px 20px;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt .bkAbtTop {
+		margin-bottom: 5px;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt .bkAbtTop .bkAbtBtN {
+		padding: 3px 5px;
+		font-size: 0.75rem;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt .bkAbtTit {
+		margin-bottom: 5px;
+		font-size: 0.875rem;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt .bkAbtDet .bkAbtDet_left {
+		display: none;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt .bkAbtDet .bkAbtDet_right {
+		width: 100%;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt .bkAbtDet .bkDetTxt {
+		display: none;
+	}
+	.bookAbtnail .bkAbtnailTxt .sayBookIcon {
+		left: 85%;
+	}
+	.bookAbtnailWrap .bookAbtnail {
+		border-bottom: none;
+	}
+	.bookAbtnailWrap .bookAbtnail {
+		padding: 15px 0;
+	}
+	.bookAbtnailWrap .bookAbtnail:nth-child(1), 
+	.bookAbtnailWrap .bookAbtnail:nth-child(2), 
+	.bookAbtnailWrap .bookAbtnail:nth-child(3), 
+	.bookAbtnailWrap .bookAbtnail:nth-child(4) {
+		padding: 15px 0;
+	}
+	.bookAbtnailWrap .bookAbtnail:nth-child(9) {
+		border-bottom: none;
+	}
+	.bookAbtnailWrap .bookAbtnail:nth-child(10) {
+		border-bottom: none;
+	}
+	.itemIntro_wrap .topOption {
+		padding: 20px 0 0 0 !important;
+	}
+
 }
 
 
@@ -505,9 +1016,72 @@
 	.cenBoxWrap.login {
 		width: 90%;
 	}
+
+	.searchBarWrap .searchBar {
+		height: 34px;
+	}
+
+	.searchBarWrap .searchBar .bookSearchBtn {
+		width: 23px;
+		height: 23px;
+	}
+	.searchBarWrap .searchBar input {
+		padding: 0 53px 0 15px;
+		font-size: 0.875rem;
+	}
+	.itemdet_wrap .itemDetTop .itemdet_txt .bkAbtTop .bkAbtBtN {
+		padding: 3px 5px;
+		font-size: 0.75rem;
+	}
+	.itemdet_wrap .itemdet_txt_top .itemdet_top_left p {
+		font-size: 1.250rem;
+	}
+	.itemdet_wrap .itemdet_txt_top img {
+		height: 55px;
+	}
+	.itemdet_wrap .itemdet_txt_bot .row .row_tit {
+		font-size: 0.875rem;
+	}
+	.itemdet_wrap .itemdet_txt_bot .row .row_det {
+		width: 75%;
+		font-size: 0.875rem;
+	}
+	.itemdet_wrap .itemdet_txt_bot .aplyshareBtn img {
+		height: 37px;
+	}
+	.itemdet_wrap .itemdet_txt_bot .row.aplyKindCom_row {
+		margin-top: 30px;
+		border-top: 1px solid #DCDCDC;
+		padding-top: 20px;
+	}
+	.itemdet_wrap .itemdet_txt_bot .row .row_det .aplyKindCom {
+		border: 1px solid #DCDCDC;
+		height: 29px;
+	}
+	.itemdet_wrap .itemdet_txt_bot .row .row_det .aplyKindCom img {
+		height: 60%;
+	}
+	.itemdet_wrap .itemdet_txt_bot .row .row_det .aplyKindCom:nth-child(2) img {
+		height: 41%;
+	}
+	.itemdet_wrap .itemdetBtnWrap {
+		margin-top: 30px;
+	}
+	.itemdet_wrap .itemdetBtnWrap .itemdetBtn {
+		height: 45px;
+		font-size: 1rem;
+	}
+	.itemdet_wrap .itemdetBtnWrap .itemdetBtn:nth-child(2) img {
+		height: 20px;
+	}
+	
 }
 
 @media (max-width:698px) {
+
+	  body {
+		-webkit-tap-highlight-color : rgb(237,237,237,0.6) !important;;
+	  }
 
     #popupWrap .popupBox {
         width: 300px;
@@ -591,7 +1165,7 @@
         height: 10px;
     }
 
-    .cont02 .sixIconWrap .sIconTxt {
+    .sixIconWrap .sIconTxt {
         font-size: 1rem;
     }
     .cont03 .c_center {
@@ -1048,10 +1622,6 @@
 
 	/*제품등록*/
 
-	.topNav {
-		display: none !important;
-	}
-
 	.subWrap.pt80 {
 		padding-top: 80px;
 	}
@@ -1068,24 +1638,6 @@
 
 	.subWrap .stepTit {
 		font-size: 0.75rem;
-	}
-
-	.subTit_noshow {
-		display: none;
-	}
-
-	.subWrap .m_subtit_wrap {
-		display: -webkit-box; 
-		display: -ms-flexbox; 
-		display: flex; 
-		-webkit-box-pack: justify; 
-		-ms-flex-pack: justify; 
-		justify-content: space-between;
-	}
-
-	.subWrap .m_subtit_wrap .m_subtit {
-		display: block;
-		font-size: 1.125rem;
 	}
 
 	.subWrap .itemListBox li {
@@ -1164,13 +1716,14 @@
 		width: 100%;
 	}
 	.ser_subTit {
-		margin-bottom: 30px;
+		margin: 30px 0;
 		font-size: 1.375rem;
 	}
 
 	.ser_subDet {
 		margin-bottom: 50px;
 		font-size: 1rem;
+		text-align: left !important;
 	}
 
 	.serviceBox .serviceTit {
@@ -1212,6 +1765,10 @@
 		font-size: 0.875rem;
 	}
 
+	.grayCont .ser_whtBox .searchSerial {
+		border-radius: 5px;
+	}
+
 	.grayCont .ser_center {
 		padding: 20px;
 	}
@@ -1248,9 +1805,11 @@
 	}
 	.grayCont .ser_whtBox .selectWrap select {
 		font-size: 0.875rem;
+		border-radius: 5px;	
 	}
 	.grayCont .ser_whtBox textarea {
 		font-size: 0.875rem;
+		border-radius: 5px;
 	}
 	.serviceBttm .cauGray {
 		font-size: 0.875rem;
@@ -1274,14 +1833,226 @@
 	.grayCont .ser_whtBox .item_tableWrap .delBtn {
 		font-size: 0.875rem;
 	}
-	.m_topNav { 
-		margin-top: 66px;
-	}
 
 	.twoBtnWrap02 .twoBtn {
 		height: 40px;
 	}
 
+	.subWrap02 .mapWhole .mapWrap #map {
+		height: 250px;
+	}
+	.serviceBttm.asBtn {
+		width: 100%;
+	}
+
+	.s_topNav {
+		display: none !important;
+	}
+
+	.m_topNav {
+		margin-top: 66px;
+	}
+
 	/*서비스접수*/
+
+	/*게시글*/
+	.sub_search_box {
+		height: 45px;
+	}
+	.sub_search_box button {
+		height: 28px;
+	}
+	.sub_search_box button img {
+		height: 100%;
+	}
+	.sub_search_box input {
+		font-size: 1rem;
+	}
+	.totalShow {
+		font-size: 1rem;
+	}
+	.subtable tr th {
+		font-size: 0.875rem;
+	}
+	.subtable tr td {
+		font-size: 0.875rem;
+	}
+	.sticker {
+		font-size: 0.7rem;
+	}
+	.titTop {
+		padding-bottom: 10px;
+	}
+	.titTop .viewTit {
+		margin: 5px 0;
+		font-size: 1.125rem;
+	}
+	.dateList li {
+		font-size:  0.875rem;
+	}
+	.boardCont {
+		padding: 44px 0 60px 0;
+		font-size: 0.875rem;
+	}
+	.a_close {
+		width: 20px;
+		height: 20px;
+	}
+	.a_close img {
+		width: 100%;
+	}
+	.sixIconTit {
+		font-size: 1.125rem;
+		text-align: center;
+	}
+	.m_br {
+		display: block;
+	}
+	.boardTab {
+		margin: 50px 0 30px 0;
+	}
+	
+	.boardTab .bTabBtn li {
+		padding: 0px;
+		font-size: 0.875rem;
+	}
+	
+	.bTabContWrap .bTabCont .tblTit p {
+		font-size: 1.125rem;
+	}
+	
+	.bTabContWrap .bTabCont .tblTit .moreBtn {
+		font-size: 1rem;
+	}
+
+	.subtable tr:nth-child(1) {
+		height: 50px;
+	}
+	.subtable tr {
+		height: 50px;
+	}
+
+	.subtable.bdFormTbl  th:nth-child(1),
+	.subtable.bdFormTbl  td:nth-child(1) {
+		padding-left: 15px;
+		width: 40%;
+		box-sizing: border-box;
+		text-align: left;
+	}
+
+	.subtable.bdFormTbl  th:nth-child(2),
+	.subtable.bdFormTbl  td:nth-child(2) {
+		width: 30%;
+	}
+
+	.subtable.bdFormTbl  th:nth-child(3),
+	.subtable.bdFormTbl  td:nth-child(3) {
+		padding-right: 15px;
+		width: 30%;
+		text-align: right;
+		box-sizing: border-box;
+	}
+	
+	.subtable .smallerFnt {
+		font-size: 0.7rem;
+	}
+
+	.subtable tr:hover {
+		background-color : rgb(237,237,237,0.7) !important;
+	}
+
+	.subtable tr td p {
+		padding-left: 0;
+	}
+
+	/*게시글*/
+
+	/*제품소개*/
+	.topOption .differShape .recentTit {
+		margin-right: 5px;
+		font-size: 1rem;
+	}
+	.topOption .differBtn > a {
+		width: 27px;
+		height: 27px;
+		background-size: 67%;
+	}
+
+	.itemTabWrap .itemTabBox .itemDetailWrap li {
+		width: 100%;
+	}
+
+	.itemTabWrap .itemTabBox.diffShpe .itemDetailWrap li .itemDetail .imgWrap {
+		width: 52px;
+		height: 52px;
+	}
+	.itemTabWrap .itemTabBox.diffShpe .itemDetailWrap li .itemDetail {
+		padding: 0;
+	}
+	.itemTabWrap .itemTabBox.diffShpe .itemDetail .t_itemTit {
+		margin-bottom: 5px;
+		font-size: 1rem;
+	}
+	.itemTabWrap .itemTabBox.diffShpe .itemDetail .t_itemDet {
+		font-size: 0.875rem;
+	}
+	.itemTabWrap .itemTabBox.diffShpe .itemDetailWrap li .itemDetail .txtBox {
+		margin-left: 20px;
+	}
+	.itemTabWrap .itemTabBox .itemDetailWrap li:nth-child(7n), 
+	.itemTabWrap .itemTabBox .itemDetailWrap li:nth-child(8n),
+	.itemTabWrap .itemTabBox .itemDetailWrap li:nth-child(9n) {
+		border-bottom: 1px solid #c7c7c7;
+	}
+
+	.itemTabWrap .itemTabBox .itemDetailWrap li:last-child {
+		border-bottom: none;
+	}
+
+	.itemTabBtnWrap {
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.itemTabBtn li {
+		margin: 0;
+		padding: 5px 11px;
+		font-size: 0.875rem;
+	}
+	.saleTxtWrap .buyBtn {
+		margin-top: 60px;
+		font-size: 0.875rem;
+		height: 53px;
+	}
+	.saleTxtWrap .itemDetail tr th {
+		font-size: 0.875rem;
+		width: 30%;
+	}
+	.saleTxtWrap .itemDetail tr td {
+		font-size: 0.875rem;
+		width: 70%;
+	}
+	.modelSeriWrap .modelSeriTit {
+		font-size: 0.875rem;
+	}
+	.inTroTabBtnWrap {
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.inTroTabBtn {
+		width: 550px;
+	}
+	.bookAbtnail .bkAbtnailTxt .sayBookIcon img {
+		height: 20px;
+	}
+	.bookAbtnailWrap .bookAbtnail .bkAbtnailTxt .bkAbtTit {
+		white-space:nowrap; 
+		overflow:hidden; 
+		text-overflow:ellipsis;
+		font-size: 0.75rem;
+	}
+	.bookAbtnailWrap .bookAbtnail .bookAbtBox {
+		width: 96%;
+	}
+	/*제품소개*/
 
 }

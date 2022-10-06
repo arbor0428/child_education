@@ -10,11 +10,15 @@
 	</ul>
 </div>
 
+<div class="m_topNav txt-c">
+	배송지 추가하기
+</div>
+
 <div class="c_center">
 	<p class="ser_subTit02">배송지 정보 변경</p>
 </div>
 
-<div class="grayCont" style="padding: 70px 0 240px 0;">
+<div class="grayCont">
 	<div class="ser_whtBox addAdr">
 		<div class="ser_center lineBot dp_sb dp_c">
 			<p class="whtBox_tit bold2 dp_f dp_c topTit">배송지 추가하기</p>
@@ -57,6 +61,25 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.grayCont {padding: 70px 0 240px 0;}
+	@media (max-width:1022px) { 
+		header {
+			border-bottom: 1px solid #BFBFBF;
+		}
+		.grayCont {
+			padding: 0 0 0 0; 
+			background-color: #F2F2F2;
+		}
+		.subWrap02 {
+			padding-top: 0;
+		}
+		.grayCont .ser_center.lineBot {
+			display: none;
+		}
+	}
+</style>
 
 <?
 	include '../footer.html';

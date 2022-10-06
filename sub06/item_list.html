@@ -1,0 +1,620 @@
+<?
+	include '../header.html';
+?>
+
+<div class="topNav dp_f dp_c">
+	<ul class="topMenu dp_f dp_c">
+		<li><a class="dp_f dp_c" href="/" title="home"><img src="../images/sub/home.png"></a></li>
+		<li><a href="" title="">> 제품 소개</a></li>
+		<li><a href="" title="">> 코딩 로봇</a></li>
+	</ul>
+</div>
+
+<div class="m_topNav txt-c">
+	제품소개
+</div>
+
+<div class="subWrap itemIntro_wrap">
+	<div class="c_center">
+		<p class="subTit subTit_noshow">
+			제품소개
+			<span>세이펜의 다양한 제품을 소개합니다.</span>
+		</p>
+		<div class="itemIntroBnr">
+			<div class="itemBox">
+				<img class="pc_img" src="../images/sub/bookIntroBnr.png" alt="">
+			</div>
+			<div class="itemBox">
+				<img class="pc_img" src="../images/sub/bookIntroBnr.png" alt="">
+			</div>
+			<div class="itemBox">
+				<img class="pc_img" src="../images/sub/bookIntroBnr.png" alt="">
+			</div>
+			<div class="itemBox">
+				<img class="pc_img" src="../images/sub/bookIntroBnr.png" alt="">
+			</div>
+		</div>
+	</div>
+	<script>
+		//비주얼 슬릭
+		$('.itemIntroBnr').slick({ 
+			fade: false,
+			dots : true,
+			arrows : false,	
+			autoplay : true,		
+			autoplaySpeed : 5000, 	
+		});
+	</script>
+    <div class="searchChkBox">
+        <div class="row dp_sb dp_c rt_row">
+            <div class="checkReset dp_f dp_c">
+				<div class="chkResetBtn"><img src="../images/sub/resetIcon.png" alt=""></div>
+				<span class="bold2">선택 초기화</span>
+            </div>
+            <div class="setToggl dp_f dp_c">
+				<span class="bold2">옵션설정</span>
+				<div class="setTogglBtn dp_f dp_c dp_cc"></div>
+            </div>
+        </div>
+        <div class="row dp_f">
+            <div class="row_tit dp_f dp_c">
+                <label for="rtChk01">
+                    <input type="checkbox" id="rtChk01">
+                    연령별
+                </label>
+            </div>
+            <div class="row_det dp_f dp_wrap dp_c">
+                <label for="rtChk01_01">
+                    <input type="checkbox" id="rtChk01_01">
+                    베이비<br class="m_br">(0-24개월)
+                </label>
+                <label for="rtChk01_02">
+                    <input type="checkbox" id="rtChk01_02">
+                    키즈<br class="m_br">(3-5세)
+                </label>
+                <label for="rtChk01_03">
+                    <input type="checkbox" id="rtChk01_03">
+                    초등 저학년
+                </label>
+                <label for="rtChk01_04">
+                    <input type="checkbox" id="rtChk01_04">
+                    초등 고학년
+                </label>
+                <label for="rtChk01_05">
+                    <input type="checkbox" id="rtChk01_05">
+                    중, 고등
+                </label>
+                <label for="rtChk01_06">
+                    <input type="checkbox" id="rtChk01_06">
+                    성인
+                </label>
+            </div>
+        </div>
+        <div class="row dp_f">
+            <div class="row_tit dp_f dp_c">
+                <label for="rtChk02">
+                    <input type="checkbox" id="rtChk01">
+                    언어별
+                </label>
+            </div>
+            <div class="row_det dp_f dp_wrap dp_c">
+                <label for="rtChk02_01">
+                    <input type="checkbox" id="rtChk02_01">
+                    한글
+                </label>
+                <label for="rtChk02_02">
+                    <input type="checkbox" id="rtChk02_02">
+                    영어
+                </label>
+                <label for="rtChk02_03">
+                    <input type="checkbox" id="rtChk02_03">
+                    중국어
+                </label>
+                <label for="rtChk02_04">
+                    <input type="checkbox" id="rtChk02_04">
+                    일본어
+                </label>
+                <label for="rtChk02_05">
+                    <input type="checkbox" id="rtChk02_05">
+                    기타
+                </label>
+            </div>
+        </div>
+        <div class="row dp_f">
+            <div class="row_tit dp_f dp_c">
+                <label for="rtChk02">
+                    <input type="checkbox" id="rtChk01">
+                    분야별
+                </label>
+            </div>
+            <div class="row_det dp_f dp_wrap dp_c">
+                <label for="rtChk02_01">
+                    <input type="checkbox" id="rtChk02_01">
+                    창작
+                </label>
+                <label for="rtChk02_02">
+                    <input type="checkbox" id="rtChk02_02">
+                    전래
+                </label>
+                <label for="rtChk02_03">
+                    <input type="checkbox" id="rtChk02_03">
+                    명작
+                </label>
+                <label for="rtChk02_04">
+                    <input type="checkbox" id="rtChk02_04">
+                    자연, 과학
+                </label>
+                <label for="rtChk02_05">
+                    <input type="checkbox" id="rtChk02_05">
+                    수, 과학
+                </label>
+                <label for="rtChk02_05">
+                    <input type="checkbox" id="rtChk02_05">
+                    인문, 예술
+                </label>
+                <label for="rtChk02_05">
+                    <input type="checkbox" id="rtChk02_05">
+                    언어학습
+                </label>
+                <label for="rtChk02_05">
+                    <input type="checkbox" id="rtChk02_05">
+                    기타
+                </label>
+            </div>
+        </div>
+    </div>
+	<div class="searchChkBox mtDiffer">
+		<div class="row dp_f">
+            <div class="row_tit dp_f dp_c">
+                <label for="rtChk02">
+                    <input type="checkbox" id="rtChk01">
+                    모두보기
+                </label>
+            </div>
+            <div class="row_det dp_f dp_wrap dp_c">
+                <label for="rtChk02_01">
+                    <input type="checkbox" id="rtChk02_01">
+                    영상 지원<br class="m_br"> 교재
+                </label>
+                <label for="rtChk02_02">
+                    <input type="checkbox" id="rtChk02_02">
+                    세이코드<br class="m_br"> 2.0
+                </label>
+                <label for="rtChk02_03">
+                    <input type="checkbox" id="rtChk02_03">
+                    세이코드<br class="m_br"> 3.0
+                </label>
+            </div>
+        </div>
+	</div>
+	
+	<script>
+		var settu = true;
+		$(".searchChkBox .setToggl").on("click",function(){
+			if(settu){
+				$(this).children(".setTogglBtn").addClass("on");
+				$(".searchChkBox .row").css({"display":"flex"});
+				$(".searchChkBox.mtDiffer").css({"border-top":"1px solid #707070"});
+				settu= false;
+			} else {
+				$(this).children(".setTogglBtn").removeClass("on");
+				$(".searchChkBox .row").css({"display":"none"});
+				$(".searchChkBox.mtDiffer").css({"border-top":"none"});
+				$(".searchChkBox .row.rt_row").css({"display":"flex"});
+				settu= true;
+			}
+		});
+	</script>
+
+    <div class="searchBarWrap">
+        <div class="searchBar dp_sb">
+            <input type="text" placeholder="찾으시는 교재명이나 출판사를 검색해보세요.">
+            <a class="bookSearchBtn dp_f dp_c dp_cc" href=""><span>교재 검색</span></a>
+        </div>
+    </div>
+
+	<div class="c_center">
+        <div class="topOption dp_sb dp_end">
+			<div class="totalShow">
+				총 <span class="bold2">15</span> 건의 제품이 있습니다.
+			</div>
+        </div>
+        
+        <div class="bookAbtnailWrap dp_sb dp_wrap">
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem01.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								 <div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem02.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem03.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem04.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem05.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem06.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem07.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem08.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem09.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem10.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem11.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+            <div class="bookAbtnail">
+				<a href="./item_view.html">
+					<div class="bookAbtBox">
+						<div class="bkAbtnailImg">
+							<img src="../images/sub/bookItem12.png" alt="">
+						</div>
+						<div class="bkAbtnailTxt">
+							<div class="bkAbtTop dp_f">
+								<div class="bkAbtBtN grn c_w">영어</div>
+								<div class="bkAbtBtN juwang c_w">중국어</div>
+								<div class="bkAbtBtN sky c_w">한국어</div>
+							</div>
+							<div class="bkAbtTit">
+								Our Discovery Island(ODI)
+							</div>
+							<div class="bkAbtDet dp_f">
+								<div class="bkAbtDet_left">
+									<div>출판사:</div>
+									<div>구&nbsp;&nbsp;&nbsp;성:</div>
+								</div>
+								<div class="sayBookIcon"><img src="../images/sub/sayBookSeri.png" alt=""></div>
+								<div class="bkAbtDet_right">
+									<div>피어슨</div>
+									<div class="bkDetTxt">명작 그림책 10권, 워크북 10권, 크래프트북 2권, 아트북 1권, 시어터팩 (극장 1종, 배경판 10장, 캐릭터시트 13장, 상자), 낱말...드 80장, 세이보드 1장, 세이렉스티커 1장, 부모가이드 1권</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+            </div>
+        </div>
+
+		<div class="pageNum dp_f dp_c dp_cc">
+			<a class="d_prev dp_f dp_c dp_cc" href="" title=""> <img src="/images/sub/d_prev.png"> </a>
+			<a class="prev dp_f dp_c dp_cc" href="" title=""> <img src="/images/sub/prev.png"> </a>
+			<a class="num on dp_f dp_c dp_cc" href="" title="">1</a>
+			<a class="num dp_f dp_c dp_cc" href="" title="">2</a>
+			<a class="num dp_f dp_c dp_cc" href="" title="">3</a>
+			<a class="num dp_f dp_c dp_cc" href="" title="">4</a>
+			<a class="num dp_f dp_c dp_cc" href="" title="">5</a>
+			<a class="next dp_f dp_c dp_cc" href="" title=""> <img src="/images/sub/next.png"> </a>
+			<a class="d_next dp_f dp_c dp_cc" href="" title=""> <img src="/images/sub/d_next.png"> </a>
+		</div>
+	</div>
+</div>
+
+<script>
+		// 체크박스 초기화
+		$(".searchChkBox .checkReset").click(function(){
+				$(this).parents().parents(".itemIntro_wrap .searchChkBox").find('input').prop("checked", false);
+		});
+</script>
+
+<style>
+	@media (max-width:1022px) { 
+		header {
+			border-bottom: 1px solid #BFBFBF;
+		}
+		.subWrap .stepTit {
+			margin-left: -10px !important;
+		}
+	}
+</style>
+
+<?
+	include '../footer.html';
+?>

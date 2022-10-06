@@ -1,0 +1,445 @@
+<?
+	include '../header.html';
+?>
+
+
+<div class="topNav dp_sb dp_c">
+	<div class="topMenu dp_sb">
+		<ul class="dp_f dp_c" style="height: 50px;">
+			<li><a class="dp_f dp_c" href="/" title="home"><img src="../images/sub/home.png"></a></li>
+			<li><a href="" title="">> 세이펜북스</a></li>
+			<li><a href="" title="">> 영어 뮤지컬 클래식</a></li>
+		</ul>
+		<div class="bookStoreSel dp_f dp_c">
+			<div class="bookSelBtn dp_f dp_c dp_cc">
+				<img src="../images/sub/books.png" alt="">
+				<span class="bookSeltit">제휴 출판사<span>(235)</span></span>
+				<span class="bookSelarrow">▼</span>
+			</div>
+			<div class="bookSelCont">
+				<div class="bookSelCont_top dp_sb dp_c">
+					<div class="bookSelTit">
+						전체 출판사
+						<span>(162)</span>
+					</div>
+					<div class="bookSelInput">
+						<input type="text">
+						<a class="bookSearchBtn dp_f dp_c dp_cc" href=""></a>
+					</div>
+					<div class="bookSelClose">
+						<span class="lnr lnr-cross"></span>
+					</div>
+				</div>
+				<div class="bookSelCont_list">
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore01.png" alt="">
+						</div>
+						<div class="row_name">
+							가나출판사(3)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore02.png" alt="">
+						</div>
+						<div class="row_name">
+							고래(2)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore03.png" alt="">
+						</div>
+						<div class="row_name">
+							고려이스쿨(4)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore04.png" alt="">
+						</div>
+						<div class="row_name">
+							그린키즈(7)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore05.png" alt="">
+						</div>
+						<div class="row_name">
+							국립중앙박물관(1)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore06.png" alt="">
+						</div>
+						<div class="row_name">
+							계몽사(1)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore07.png" alt="">
+						</div>
+						<div class="row_name">
+							글뿌리(2)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore08.png" alt="">
+						</div>
+						<div class="row_name">
+							글채움(4)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore09.png" alt="">
+						</div>
+						<div class="row_name">
+							기린미디어(7)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore10.png" alt="">
+						</div>
+						<div class="row_name">
+							기탄교육(5)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore11.png" alt="">
+						</div>
+						<div class="row_name">
+							꿈꾸는 물고기(11)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore12.png" alt="">
+						</div>
+						<div class="row_name">
+							나우아임리딩(5)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore13.png" alt="">
+						</div>
+						<div class="row_name">
+							노리야북스(7)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore14.png" alt="">
+						</div>
+						<div class="row_name">
+							노란우산(45)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore15.png" alt="">
+						</div>
+						<div class="row_name">
+							다산북스(5)
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(".topNav .bookSelBtn").on("click",function(){
+		$(".topNav .bookSelCont").stop().fadeIn();
+		$(".topNav .bookSelarrow").text("▲");
+	});
+
+	$(".topNav .bookSelCont .bookSelClose").on("click",function(){
+		$(".topNav .bookSelCont").stop().fadeOut();
+		$(".topNav .bookSelarrow").text("▼");
+	});
+</script>
+
+<div class="m_topNav">
+	<div class="m_topNav_center dp_sb">
+		<span>제품소개</span>
+		<div class="bookStoreSel dp_f dp_c">
+			<div class="bookSelBtn dp_f dp_c dp_cc">
+				<img src="../images/sub/books.png" alt="">
+				<span class="bookSeltit">제휴 출판사</span>
+				<span class="bookSelarrow">▼</span>
+			</div>
+			<div class="bookSelCont">
+				<div class="bookSelCont_top dp_sb dp_c">
+					<div class="bookSelTit">
+						전체 출판사
+						<span>(162)</span>
+					</div>
+					<div class="bookSelInput">
+						<input type="text">
+						<a class="bookSearchBtn dp_f dp_c dp_cc" href=""></a>
+					</div>
+					<div class="bookSelClose">
+						<span class="lnr lnr-cross"></span>
+					</div>
+				</div>
+				<div class="bookSelCont_list">
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore01.png" alt="">
+						</div>
+						<div class="row_name">
+							가나출판사(3)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore02.png" alt="">
+						</div>
+						<div class="row_name">
+							고래(2)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore03.png" alt="">
+						</div>
+						<div class="row_name">
+							고려이스쿨(4)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore04.png" alt="">
+						</div>
+						<div class="row_name">
+							그린키즈(7)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore05.png" alt="">
+						</div>
+						<div class="row_name">
+							국립중앙박물관(1)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore06.png" alt="">
+						</div>
+						<div class="row_name">
+							계몽사(1)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore07.png" alt="">
+						</div>
+						<div class="row_name">
+							글뿌리(2)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore08.png" alt="">
+						</div>
+						<div class="row_name">
+							글채움(4)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore09.png" alt="">
+						</div>
+						<div class="row_name">
+							기린미디어(7)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore10.png" alt="">
+						</div>
+						<div class="row_name">
+							기탄교육(5)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore11.png" alt="">
+						</div>
+						<div class="row_name">
+							꿈꾸는 물고기(11)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore12.png" alt="">
+						</div>
+						<div class="row_name">
+							나우아임리딩(5)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore13.png" alt="">
+						</div>
+						<div class="row_name">
+							노리야북스(7)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore14.png" alt="">
+						</div>
+						<div class="row_name">
+							노란우산(45)
+						</div>
+					</a>
+					<a href="" class="row dp_f dp_c">
+						<div class="row_img">
+							<img src="../images/sub/bookstore15.png" alt="">
+						</div>
+						<div class="row_name">
+							다산북스(5)
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(".m_topNav .bookSelBtn").on("click",function(){
+		$(".m_topNav .bookSelCont").stop().slideDown();
+		$(".m_topNav .bookSelarrow").text("▲");
+	});
+
+	$(".m_topNav .bookSelCont .bookSelClose").on("click",function(){
+		$(".m_topNav .bookSelCont").stop().slideUp();
+		$(".m_topNav .bookSelarrow").text("▼");
+	});
+</script>
+
+<div class="subWrap itemdet_wrap">
+	<div class="c_center">
+		<div class="dp_sb itemDetTop">
+			<div class="itemdet_img">
+				<img src="../images/sub/musical.png" alt="">
+			</div>
+			<div class="itemdet_txt">
+				<div class="itemdet_txt_top dp_sb">
+					<div class="itemdet_top_left">
+						<div class="bkAbtTop dp_f">
+							<div class="bkAbtBtN grn c_w">영어</div>
+							<div class="bkAbtBtN juwang c_w">중국어</div>
+							<div class="bkAbtBtN sky c_w">한국어</div>
+						</div>
+						<p>영어 뮤지컬 클래식</p>
+					</div>
+					<img src="../images/sub/bg_sayBookSeri.png" alt="">
+				</div>
+				<div class="itemdet_txt_bot">
+					<a class="aplyshareBtn" href="javascript:CopyDirect();">
+						<img src="../images/sub/aplyShare.png" alt="">
+					</a>
+					<div class="itemdet_tbl">
+						<div class="row dp_sb">
+							<div class="row_tit">출판사</div>
+							<div class="row_det">세이펜북스</div>
+						</div>
+						<div class="row dp_sb">
+							<div class="row_tit">분야</div>
+							<div class="row_det">전래, 인문, 예술, 언어학습</div>
+						</div>
+						<div class="row dp_sb">
+							<div class="row_tit">구성</div>
+							<div class="row_det">30권, 포스터 2장, 교구카드 44장 등</div>
+						</div>
+						<div class="row dp_sb">
+							<div class="row_tit">학습연령</div>
+							<div class="row_det">베이비(0-24개월), 키즈(3-5세), 주니어(6-7세), 초등 저학년</div>
+						</div>
+						<div class="row dp_sb">
+							<div class="row_tit">한줄소개</div>
+							<div class="row_det">뮤지컬로 만나는 세계 명작 동화! 세계 명작 동화로 재미있게 영어를 배워보세요.</div>
+						</div>
+						<div class="row dp_sb aplyKindCom_row">
+							<div class="row_tit">지원 콘텐츠</div>
+							<div class="row_det">
+								<div class="dp_sb dp_wrap">
+									<div class="aplyKindCom dp_f dp_c dp_cc">
+										<img src="../images/sub/applycontent01.png" alt="">
+									</div>
+									<div class="aplyKindCom dp_f dp_c dp_cc">
+										<img src="../images/sub/applycontent02.png" alt="">
+									</div>
+									<div class="aplyKindCom dp_f dp_c dp_cc">
+										<img src="../images/sub/applycontent03.png" alt="">
+									</div>
+									<div class="aplyKindCom dp_f dp_c dp_cc">
+										<img src="../images/sub/applycontent04.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="itemdetBtnWrap dp_f">
+			<a href="javascript:void(0);" class="itemdetBtn dp_f dp_c dp_cc">교재 소개</a>
+			<a href="" class="itemdetBtn dp_f dp_c dp_cc"><img src="../images/sub/cartImg.png" alt="">구매 하기</a>
+		</div>
+		<div class="itemdetContWrap">
+			<img class="pc_itemdetCont" src="../images/sub/musical_view.png" alt="">
+			<img class="m_itemdetCont" src="../images/sub/m_musical_view.png" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="m_topBtn">
+	<a href="" title="">
+		<img src="../images/sub/topBnr.png" alt="">
+	</a>
+</div>
+
+<script>
+    // 맨위로 가기	    
+    $('.m_topBtn').click(function(){
+        $('html, body').animate({scrollTop:0}, 400);
+        return false;
+    });	
+</script>
+
+<script>
+	function CopyDirect(){
+       prompt("Ctrl+C를 눌러 주소를 복사해 주시기 바랍니다.", "주소값");
+   }
+
+</script>
+
+<style>
+	@media (max-width:1022px) { 
+		header {
+			border-bottom: 1px solid #BFBFBF;
+		}
+		.subWrap .stepTit {
+			margin-left: -10px !important;
+		}
+	}
+</style>
+
+<?
+	include '../footer.html';
+?>

@@ -84,8 +84,13 @@ input[type=checkbox]:disabled + label {
 .c_w {color:#fff;}
 .c_red {color: #D0262C;}
 .c_red02 {color: #D90000;}
+.c_gry {color: #D90000;}
 .red01 {background-color: #D10000;}
 .dark {background-color: #000;}
+
+.grn {background-color: #A6CE00;}
+.juwang {background-color: #F79122;}
+.sky {background-color: #52A5DB;}
 
 
 

@@ -318,6 +318,27 @@
 	</div>
 </div>
 
+<div class="asDetailWrap">
+	<div class="asDetailBox">
+		<a class="closeBtn" href="" title="닫기"><img src="../images/sub/modal_close01.png" alt=""></a>
+		<img src="../images/sub/serviceStep_bnr_m.png" alt="as 접수 절차">
+	</div>
+</div>
+
+<script>
+	$(function(){
+		$(".grayCont .ser_whtBox .ser_regiBtn").on("click",function(event){
+			event.preventDefault();
+			$(".asDetailWrap").stop().fadeIn();
+		});
+
+		$(".asDetailBox .closeBtn").on("click",function(event){
+			event.preventDefault();
+			$(".asDetailWrap").stop().fadeOut();
+		});
+	});
+</script>
+
 <div class="serviceBttm">
 	<p class="cauGray txt-c">*고장접수 내용을 상세하게 기록해주시면 보다 정확하고 신속한 서비스를 받으실 수 있습니다.<br> 
 		*세이펜 외의 동봉품이 있으시면 상세하게 기록해주세요.<br>

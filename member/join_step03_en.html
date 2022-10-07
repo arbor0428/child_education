@@ -31,11 +31,13 @@
 						<input type="text" name="" id="" class="" placeholder="Username" onkeypress="" autocomplete="off">
 					</div>
 					<a class="submitBtn ipt_smallbtn dp_f dp_c dp_cc" href="" title="Duplication check">Duplication check</a>
-					<div class="staInfo">
-						<p class="red02">That username is taken. Try another.</p>
-						<p class="green" style="display:none;">This is a valid Username.</p>
-					</div>
 				</div>
+				<!---상태표시-->
+				<div class="injChk">
+					<p class="timeChk">Please enter a username</p>
+					<p class="timeChk" style="display:none; color: #33C400;">This is a valid Username.</p>
+				</div>
+				<!---상태표시-->
 				<div class="joinInputWrap dp_sb">
 					<div class="txtInputWrap smpl dp_f dp_end wid100">
 						<span class="red">*</span>
@@ -47,15 +49,17 @@
 						<span class="red">*</span>
 						<input type="text" name="" id="" class="" placeholder="Password Confirm" onkeypress="" autocomplete="off">
 					</div>
-					<div class="staInfo">
-						<p class="red02">Those passwords didn’t match. Try again.</p>
-						<p class="green" style="display:none;">The password information matches.</p>
+				</div>
+				<!---상태표시-->
+				<div class="injChk dp_sb">
+					<p class="timeChk">Please enter your password</p>
+					<p class="timeChk" style="display:none; color: #33C400;">The password information matches.</p>
+					<div class="showPW" style="margin-top:0;">
+						<input id="passShow" type="checkbox" autocomplete="off">
+						<label for="passShow" class="medium">Show password</label>
 					</div>
 				</div>
-				<div class="showPW dp_f">
-					<input id="passShow" type="checkbox" autocomplete="off">
-					<label for="passShow">Show password</label>
-				</div>
+				<!---상태표시-->
 				<div class="joinInputWrap dp_sb en_nameWrap">
 					<div class="txtInputWrap dp_f dp_end">
 						<input type="text" name="" id="" class="" placeholder="First name" onkeypress="" autocomplete="off">
@@ -65,6 +69,11 @@
 						<input type="text" name="" id="" class="" placeholder="Last name" onkeypress="" autocomplete="off">
 					</div>
 				</div>
+				<!---상태표시-->
+				<div class="injChk">
+					<p class="timeChk">Please enter a name</p>
+				</div>
+				<!---상태표시-->
 				<div class="joinInputWrap dp_sb">
 					<div class="birthSel">
 						<span class="red">*</span>
@@ -113,6 +122,11 @@
 						</select>
 					</div>
 				</div>
+				<!---상태표시-->
+				<div class="injChk">
+					<p class="timeChk">Please enter your date of birth</p>
+				</div>
+				<!---상태표시-->
 				<div class="joinInputWrap dp_sb dp_end mtchange01">
 					<div class="readyNm">
 						<span>saypen12345</span>
@@ -136,6 +150,11 @@
 						<input type="text" name="" id="" class="" placeholder="City name" onkeypress="" autocomplete="off">
 					</div>
 				</div>
+				<!---상태표시-->
+				<div class="injChk">
+					<p class="timeChk">Please enter your region</p>
+				</div>
+				<!---상태표시-->
 			</div>
 		</div>
 		<a class="submitBtn nextBtn dp_f dp_c dp_cc" href="join_step04_en.html" title="Next">Next</a>

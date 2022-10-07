@@ -1567,6 +1567,9 @@
 	.joinTop02 .jt_center {
 		display: block;
 	}
+	.jt_center.widchange {
+		width: 100%;
+	}
 
 	.joinTop02 .jtSubDetail {
 		margin-top: 30px;
@@ -1583,6 +1586,7 @@
 
 	.submitBtn.nextBtn02 {
 		margin: 0;
+		width: 100%;
 	}
 
 	.idChkShow {

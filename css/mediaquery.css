@@ -531,6 +531,10 @@
 		font-weight: 500;
 	}
 
+	.m_topNav .bookSeltit {
+		font-size: 0.875rem;
+	}
+
 	.subTit_noshow {
 		display: none;
 	}
@@ -761,7 +765,7 @@
 	}
 
 	.m_topNav .bookSelBtn img {
-		margin-right: 10px;
+		margin-right: 6px;
 	}
 	.m_topNav .bookSelBtn .bookSelarrow {
 		margin-left: 10px;
@@ -2016,6 +2020,11 @@
 	.itemTabBtnWrap {
 		width: 100%;
 		overflow-x: scroll;
+		 -ms-overflow-style: none; /* IE and Edge */
+		 scrollbar-width: none; /* Firefox */
+	}
+	.itemTabBtnWrap::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
 	}
 	.itemTabBtn li {
 		margin: 0;
@@ -2030,18 +2039,29 @@
 	.saleTxtWrap .itemDetail tr th {
 		font-size: 0.875rem;
 		width: 30%;
+		color: #919191;
+		font-weight: 400;
 	}
 	.saleTxtWrap .itemDetail tr td {
 		font-size: 0.875rem;
 		width: 70%;
+		font-weight: 500;
+		color: #000;
 	}
+
 	.modelSeriWrap .modelSeriTit {
 		font-size: 0.875rem;
 	}
 	.inTroTabBtnWrap {
 		width: 100%;
 		overflow-x: scroll;
+		 -ms-overflow-style: none; /* IE and Edge */
+		 scrollbar-width: none; /* Firefox */
 	}
+	.inTroTabBtnWrap::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+
 	.inTroTabBtn {
 		width: 550px;
 	}

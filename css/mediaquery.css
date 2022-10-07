@@ -918,6 +918,10 @@
 	.itemIntro_wrap {
 		padding-top: 0;
 	}
+	.subWrap.subWrap03 {
+		padding-bottom: 12px !important;
+	}
+
 	.modelSeriWrap .modelSeri li {
 		padding: 0 10px;
 		height: 50px;

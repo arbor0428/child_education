@@ -53,7 +53,7 @@ textarea {
 .dp_end02 {justify-content: flex-end;}
 .dp_fc {flex-direction: column;}
 
-.dp_ib{display:inline-block;}
+.dp_ib{display:inline-block !important;}
 .dp_b {display:block;}
 .p_r {position:relative;}
 .v_m {vertical-align:middle;}
@@ -82,11 +82,16 @@ input[type=checkbox]:disabled + label {
 }
 
 .c_w {color:#fff;}
+.c_blk {color: #000;}
 .c_red {color: #D0262C;}
 .c_red02 {color: #D90000;}
-.c_gry {color: #D90000;}
+.c_red03 {color:#D0232A;}
+.c_gry {color:#7E7E7E;}
 .red01 {background-color: #D10000;}
+.red02 {background-color: #D10000;}
 .dark {background-color: #000;}
+.gry {background-color: #6C6C6C;}
+.gry02 {background-color: #ABABAB;}
 
 .grn {background-color: #A6CE00;}
 .juwang {background-color: #F79122;}

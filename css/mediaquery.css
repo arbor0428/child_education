@@ -58,6 +58,15 @@
 	.itemIntro_wrap .searchChkBox .row:nth-child(4) .row_det {
 		padding: 10px 20px;
 	}
+	.mypageCont .myRegiItems_con .levelBoxWrap .levelBox {
+		padding: 0 40px;
+	}
+	.mypageCont .regiList_detBox_two {
+		width: 620px;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 {
+		padding: 0 10px;
+	}
 }
 
 @media (max-width:1022px){	
@@ -827,9 +836,39 @@
 		background-image: url('../images/search.png');
 		background-color: transparent;
 	}
+	.mypage_wrap .sidemenu {
+		display: none;
+	}
+	.mypage_wrap .mypageCont {
+		width: 100%;
+	}
+
+	.mypageCont .mypage_gryChkBox {
+		border-radius: 0;
+	}
+	.mypageCont .mypage_gryChkBox .gryChkBox_top {
+		margin-bottom: 20px;
+		display: block;
+	}
+	.mypageCont .mypage_gryChkBox .gryChkBox_top .editBtnWrap {
+		margin-top: 20px;
+	}
+	.mypage_wrap .editBtnWrap .borBtn {
+		margin: 0 5px;
+	}
+	.mypage_wrap .editBtnWrap .borBtn:first-child {
+		margin: 0 5px 0 0;
+	}
+	.mypageCont .regiList_detBox_two {
+		width: 560px;
+	}
+
 }
 
 @media (max-width:900px) {
+	.mypage_wrap .c_center.m_wid100 {
+		width: 100%;
+	}
 	.cenBoxWrap.join {
 		width: 90%;
 	}
@@ -1016,6 +1055,58 @@
 	.itemIntro_wrap .topOption {
 		padding: 20px 0 0 0 !important;
 	}
+	.mypageCont .level_det_bot {
+		display: block;
+	}
+	.mypage_wrap .borBtn {
+		display: inline-block;
+		line-height: 30px;
+	}
+	.level_det_bot .borBtn {
+		margin-top: 10px;
+	} 
+	.mypage_wrap .editBtnWrap .borBtn {
+		line-height: 35px;
+	}
+	.mypageCont .myRegiItems_con.chng {
+		padding: 0 0 20px 20px;
+		margin: 20px 0 0 0;
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.mypageCont .mypage_gryChkBox {
+		margin-bottom:10px;
+		box-shadow: -2px 4px 9px #00000029;
+	}
+	.mypageCont .myRegiItems_con .myRegiItems_list {
+		width: 900px;
+	}
+	.mypageCont .myRegiItems_con .levelBoxWrap .levelBox {
+		padding: 0 24px;
+	}
+	.subWrap.mypage_wrap.gry {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color:#F1F1F1;
+	}
+	.mypageCont .myRegiItems {
+		padding-top: 15px;
+		margin-bottom: 15px;
+		background-color: #fff;
+	}
+	.myRegiLast_wrap .myRegiLast_box {
+		margin: 30px auto;
+		width: 90%;
+	}
+	.mypageCont .myRegiItems .myRegiItems_tit {
+		padding:0 25px 16px;
+		border-bottom: 1px solid #C1C1C1;
+	}
+	.myRegiLast_wrap {
+		display: block !important;
+		margin-top: 15px;
+		padding: 10px 0;
+	}
 
 }
 
@@ -1082,6 +1173,123 @@
 	.itemdet_wrap .itemdetBtnWrap .itemdetBtn:nth-child(2) img {
 		height: 20px;
 	}
+	.mypageCont .mypage_gryChkBox .gryChkBox_name {
+		font-size: 1.125rem;
+	}
+	.mypage_wrap .editBtnWrap .borBtn {
+		line-height: 30px;
+		height: 30px;
+	}
+	.mypageCont .myRegiItems_con {
+		width: 100%;
+	}
+	.mypageCont .myRegiItems_con.m_none {
+		display: none;
+	}
+	.mypage_wrap .borBtn.m_none {
+		display: none;
+	}
+	.myRegiItems .m_blockBtn {
+		display: flex;
+		border-bottom: 1px solid #C1C1C1;
+		font-size: 1.125rem;
+		height: 60px;
+		transition: all 0.3s;
+	}
+	.myRegiItems .m_blockBtn:hover {
+		color: #fff;
+		background-color: #D10000;
+		border-bottom: 1px solid #D10000;
+	}
+	.mypageCont .myRegiItems_con .levelBoxWrap {
+		margin: 0 auto 20px;
+		width: 95%;
+	}
+	.mypageCont .level_det_bot .level_det_list {
+		flex-wrap: wrap;
+		font-size: 0.875rem;
+	}
+	.mypageCont .myRegiItems_con .smallStatus {
+		margin-right: 14px;
+	}
+	.mypageCont .myRegiItems_con .levelBoxWrap .levelBox {
+		padding: 0 15px;
+	}
+	.mypageCont .myRegiItems_con .levelBoxWrap .levelBox p {
+		font-size: 1rem;
+	}
+	.mypageCont .myRegiItems_con .levelBoxWrap .levelBox span {
+		font-size: 0.875rem;
+	}
+	.mypageCont .myRegiItems_con .levelBoxWrap > img {
+		width: 8px;
+	}
+	.mypageCont .mypage_gryChkBox .gryChkBox_botbox .botbox_tit {
+		font-size: 0.875rem;
+	}
+	.mypageCont .mypage_gryChkBox .gryChkBox_botbox .botbox_det {
+		font-size: 1rem;
+	}
+	.mypageCont .mypage_gryChkBox .gryChkBox_botbox .botbox_det .nm {
+		font-size: 1.3rem;
+	}
+	.mypageCont .mypage_gryChkBox {
+		padding: 28px 15px;
+	}
+	.mypageCont .myRegiItems .myRegiItems_tit .myRegiItems_tit_first {
+		font-size: 1.125rem;
+	}
+	.mypageCont .myRegiItems_con .myRegiItems_list li {
+		width: 72px;
+	}
+	.mypageCont .myRegiItems_con .myRegiItems_list li .imgWrap {
+		height: 72px;
+	}
+	.mypageCont .myRegiItems_con .myRegiItems_list li p {
+		font-size: 0.75rem;
+	}
+	.myRegiItems .perQnaWrap {
+		display: flex;
+	}
+	.myRegiItems .perQnaWrap .perQnaBox {
+		box-sizing: border-box;
+		width: 50%;
+		border: 1px solid #C1C1C1;
+		border-top: none;
+		height: 60px;
+	}
+	.myRegiItems .perQnaWrap .perQnaBox:first-child {
+		border-right: none;
+	}
+	.myRegiItems .perQnaWrap .perQnaBox p {
+		margin: 0 10px;
+		font-size: 0.875rem;
+	}
+	.myRegiItems .perQnaWrap .perQnaBox span {
+		font-weight: 700;
+		font-size: 1.250rem;
+	}
+	.myRegiItems .perQnaWrap .perQnaBox .new {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		color: #fff;
+		font-weight: 500;
+		background-color: #d10000;
+		font-size: 0.75rem;
+		margin-left: 10px;
+	}
+	.myRegiLast_wrap .myRegiLast_box .myRegiLast_tit {
+		font-size: 1.125rem;
+	}
+	.myRegiLast_wrap .myRegiLast_box .myRegiLast_small .myRegiLast_small01 {
+		font-size: 1rem;
+	}
+	.myRegiLast_wrap .myRegiLast_box .myRegiLast_small .myRegiLast_small02 {
+		font-size: 1.125rem;
+	}
+
+
 	
 }
 
@@ -1352,7 +1560,7 @@
 	}
 
 	.cenBoxWrap .loginWrap .loginBtn {
-		height: 50px;
+		height: 40px;
 		line-height: 40px;
 		font-size: 1.125rem;
 	}
@@ -2066,6 +2274,10 @@
 		display: none; /* Chrome, Safari, Opera*/
 	}
 
+	.mypageCont .myRegiItems_con.chng::-webkit-scrollbar {
+		display: none;
+	}
+
 	.inTroTabBtn {
 		width: 550px;
 	}
@@ -2082,5 +2294,39 @@
 		width: 96%;
 	}
 	/*제품소개*/
+	.cenBoxWrap .loginWrap .loginsubTit {
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	.cenBoxWrap .loginWrap .loginsubTit p {
+		margin: 0 0 5px 0;
+		font-size: 0.875rem;
+	}
+	.cenBoxWrap .loginWrap .loginsubTit span {
+		font-size: 0.7rem;
+	}
+	.mypage_wrap .borBtn.m-none {
+		display: none;
+	}
+	.mypage_wrap .m_borBtn {
+		display: inline-block;
+		line-height: 30px;
+	}
+	.level_det_bot .m_borBtn {
+		margin-top: 10px;
+	} 
+	.levelcirWrap .cirStatus {
+		margin-right: 10px;
+	}
+	.levelcirWrap .cirStatus_wrap {
+		width: calc(100% - 16px);
+	}
+	.levelcirWrap .cirStatus_wrap .cirStatus_date {
+		margin-right: 10px;
+		width: 60px;
+	}
+	.levelcirWrap .cirStatus_wrap .cirStatus_det {
+		width: calc(100% - 80px);
+	}
 
 }

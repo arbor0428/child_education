@@ -35,6 +35,17 @@
     text-align: center;
 }
 
+.cenBoxWrap .loginWrap .loginsubTit {
+    margin-bottom: 60px;
+	text-align: center;
+}
+
+.cenBoxWrap .loginWrap .loginsubTit p {
+	margin: 0 0 10px 0;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
 .cenBoxWrap .loginWrap .inputWrap {
     position: relative;
     margin: 0 auto;
@@ -92,6 +103,10 @@
     color: #fff;
     background-color: #D1282D;
     font-size: 1.25rem;
+}
+
+.cenBoxWrap .loginWrap .loginBtn.mt50 {
+	margin-top: 50px;
 }
 
 .cenBoxWrap .loginWrap .subBtnWrap {
@@ -330,6 +345,11 @@
     width: 91px;
 }
 
+.joinInputWrap .submitBtn.widsame {
+    padding: 7px 0;
+    width: 91px;
+}
+
 .joinInputWrap .ipt_smallbtn.red {
     color: #fff;
     border: none;
@@ -338,6 +358,10 @@
 
 .injChk {
     margin-top: 10px;
+}
+
+.injChk.editInfo {
+    margin-top: 15px;
 }
 
 .injChk > p {
@@ -439,12 +463,12 @@
     width: auto;
 }
 
-.joinWrap02.step03 .showPW {
+.showPW {
     margin-top: 10px;
     justify-content: flex-end;
 }
 
-.joinWrap02.step03 .showPW label {
+.showPW label {
     font-size: 0.813rem;
     color: #7E7E7E;
 }
@@ -470,14 +494,24 @@
     font-size: 0.75rem;
 }
 
-.joinWrap02.step03 .joinInputWrap .birthSel {
+.joinInputWrap .birthSel {
     width: 30%;
 }
 
-.joinWrap02.step03 .joinInputWrap select {
+.joinInputWrap select {
     width: 100%;
     color: #7E7E7E;
     font-size: 0.938rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.joinInputWrap.editInfo input {
+    font-size: 1rem;
+}
+
+.joinInputWrap.editInfo select {
+    font-size: 1rem;
+    color: #000;
 }
 
 .joinWrap02.step03 .joinInputWrap .birthSel:nth-child(1) select {
@@ -497,19 +531,19 @@
     font-size: 0.938rem;
 }
 
-.joinWrap02.step03 .joinInputWrap .emailInput {
+.joinInputWrap .emailInput {
     width: 33%;
 }
 
-.joinWrap02.step03 .joinInputWrap .emailSel {
+.joinInputWrap .emailSel {
     width: 46%;
 }
 
-.joinWrap02.step03 .joinInputWrap .ipt_smallbtn.widchange {
+.joinInputWrap .ipt_smallbtn.widchange {
     width: 172px; 
 }
 
-.joinWrap02.step03 .joinInputWrap .ji_line {
+.joinInputWrap .ji_line {
     width: 1px;
     height: 20px;
     background-color: #BEBEBE;
@@ -521,15 +555,15 @@
     font-size: 0.938rem;
 }
 
-.joinWrap02.step03 .childnm {
+.joinInputWrap .childnm {
     width: 36%;
 }
 
-.joinWrap02.step03 .childwm {
+.joinInputWrap .childwm {
     width: 22%;
 }
 
-.joinWrap02.step03 .childyear {
+.joinInputWrap .childyear {
     width: 34%;
 }
 
@@ -729,6 +763,15 @@
 	color: #fff;
 	background-color: #D1282D;              
 	font-size: 0.875rem;
+}
+
+.editInfoWrap .childTit {
+    margin-top: 60px;
+    color: #808080;
+}
+
+.joinInputWrap.mt10 {
+    margin-top: 15px;
 }
 
 

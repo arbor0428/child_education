@@ -2,6 +2,10 @@
 	include '../header.html';
 ?>
 
+	<div class="m_topNav txt-c">
+		내 정보 수정
+	</div>
+
 	<div class="grayCont">
 		<div class="cenBoxWrap login vh100">
 			<div class="loginWrap">
@@ -18,10 +22,22 @@
 					<img src="/images/sub/pwImg.png" alt="password">
 					<input type="password" name="passwd" id="passwd" class="" placeholder='비밀번호' onkeypress="" autocomplete="off">
 				</div>
-				<a class="mt50 loginBtn medium" href="" title="확인">확인</a>
+				<a class="mt50 loginBtn medium" href="./sub05.html" title="확인">확인</a>
 			</div>
 		</div>
 	</div>
+
+
+	<style>
+		@media (max-width:1022px) { 
+			header {
+				border-bottom: 1px solid #BFBFBF;
+			}
+			.subWrap .stepTit {
+				margin-left: -10px !important;
+			}
+		}
+	</style>
  
 <?
 	include '../footer.html';

@@ -10,7 +10,7 @@
 </div>
 
 <div class="m_topNav txt-c">
-	회원정보수정
+	내 정보 수정
 </div>
 
 <div class="subWrap mypage_wrap">
@@ -20,30 +20,30 @@
 			<p class="sidemenu_tit">회원정보수정</p>
 			<ul class="sidemenu_con">
 				<li>
-					<span>회원정보수정</span>
+					<a href="./edit.html">회원정보수정</a>
 					<ul class="sidemenu_con_btn">
-						<li>내 정보 수정</li>
-						<li>배송 주소 관리</li>
+						<li><a href="./edit.html">내 정보 수정</a></li>
+						<li><a href="./edit.html">배송 주소 관리</a></li>
 					</ul>
 				</li>
 				<li>
-					<span>등록 제품</span>
+					<a href="./sub02.html">등록 제품</a>
 					<ul class="sidemenu_con_btn">
-						<li>등록 제품</li>
-						<li>제품 등록하기</li>
+						<li><a href="./sub02.html">등록 제품</a></li>
+						<li><a href="">제품 등록하기</a></li>
 					</ul>
 				</li>
 				<li>
-					<span>AS 내역</span>
+					<a href="./sub03.html">AS 내역</a>
 					<ul class="sidemenu_con_btn">
-						<li>접수내역</li>
-						<li>AS 내역 전체보기</li>
+						<li><a href="./sub03.html">접수내역</a></li>
+						<li><a href="./sub03.html">AS 내역 전체보기</a></li>
 					</ul>
 				</li>
 				<li>
-					<span>AS 내역 전체보기</span>
+					<a href="./sub04.html">1:1 문의 내역</a>
 					<ul class="sidemenu_con_btn">
-						<li>문의내역</li>
+						<li><a href="./sub04.html">문의내역</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -120,7 +120,7 @@
 				</div>
 				<div class="joinInputWrap editInfo dp_sb">
 					<div class="txtInputWrap dp_f dp_end wid100">
-						<input type="text" name="" id="" class="" vaule="01012345678" onkeypress="" autocomplete="off">
+						<input type="text" name="" id="" class="" vaule="010-1234-5678" onkeypress="" autocomplete="off">
 						<a class="submitBtn dp_f dp_c dp_cc widsame" href="" title="변경">변경</a>
 					</div>
 				</div>
@@ -181,19 +181,61 @@
 							<option value="">2002</option>
 						</select>
 					</div>
-					<a class="childAddBtn" href="">+</a>
+					<a class="childAddBtn dp_f dp_c dp_cc" href="">+</a>
 				</div>
-				<div class="dp_f dp_end02">
-					<a class="c_gry" href="" title="탈퇴하기">탈퇴하기 ></a>
+				<div class="dp_f dp_end02 resignBtn">
+					<a class="c_gry" href="./sub06.html" title="탈퇴하기">탈퇴하기 ></a>
 				</div>
 				<div class="dp_sb">
-					<a class="halfsBtn c_blk dp_f dp_c dp_cc medium" href="" title="취소">취소</a>
-					<a class="halfsBtn red dp_f dp_c dp_cc medium" href="" title="수정">수정</a>
+					<a class="halfsBtn dp_f dp_c dp_cc medium cancelBtn" href="" title="취소">취소</a>
+					<a class="halfsBtn red dp_f dp_c dp_cc medium perinfoEdit" href="" title="수정">수정</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="popUpwrap">
+	<div class="popUpBox dp_f dp_cc dp_c">
+		<a class="closeBtn" href="" title="닫기"><img src="../images/sub/modal_close01.png" alt=""></a>
+		<div class="textBox">
+			<div class="chageBox mbDiffer">
+				<p class="txt01 txt-c">내 정보를 수정하시겠습니까?</p>
+			</div>
+			<div class="cir_btnWrap dp_f dp_cc dp_c">
+				<a class="cir_btn dp_f dp_cc dp_c" href="" title="취소">취소</a>
+				<a class="cir_btn dp_f dp_cc dp_c" href="" title="확인">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+
+		$(".perinfoEdit").on("click",function(event){
+			event.preventDefault();
+			$(".popUpwrap").stop().fadeIn();
+		});
+
+		$(".popUpwrap .closeBtn").on("click",function(event){
+			event.preventDefault();
+			$(".popUpwrap").stop().fadeOut();
+		});
+	});
+</script>
+
+<style>
+	@media (max-width:1022px) { 
+		header {
+			border-bottom: 1px solid #BFBFBF;
+		}
+		.subWrap .stepTit {
+			margin-left: -10px !important;
+		}
+	}
+</style>
+
 
 <?
 	include '../footer.html';

@@ -290,7 +290,19 @@
 .popUpwrap .popUpBox .textBox .txt01 {
 	margin-bottom: 10px;
 	font-weight: 700;
-	font-size: 1.375rem;
+	font-size: 1.250rem;
+}
+
+.popUpwrap .popUpBox .textBox .mbDiffer {
+	margin-bottom: 80px;
+}
+
+
+.popUpwrap .popUpBox .textBox .mbDiffer02 .blueAlrm {
+	margin-bottom: 30px;
+	color: #4099FF;
+	font-weight: 700;
+	font-size: 1.125rem;
 }
 
 .popUpwrap .popUpBox .textBox .txt02 {
@@ -1041,6 +1053,7 @@
 	width: 25px;
 	height: 25px;
 	font-size: 0.875rem;
+	background-color: #fff;
 }
 
 .pageNum a.on {
@@ -2009,7 +2022,7 @@
 	margin-bottom: 30px;
 }
 
-.mypage_wrap .sidemenu .sidemenu_con > li > span {
+.mypage_wrap .sidemenu .sidemenu_con > li > a {
 	display: block;
 	margin-bottom: 16px;
 	font-size:1.125rem;
@@ -2055,6 +2068,10 @@
 	background-color: #fff;
 	font-size: 0.875rem;
 	height: 30px;
+}
+
+.m_flex_right {
+	display:none;
 }
 
 .mypage_wrap .m_borBtn {
@@ -2203,6 +2220,10 @@
 	font-weight: 500;
 }
 
+.mypageCont .myRegiItems_con .m_block_box .m_selBox {
+	display: none;
+}
+
 .mypageCont .myRegiItems_con .levelBoxWrap {
 	padding: 18px 0;
 	border-radius: 11px;
@@ -2222,7 +2243,7 @@
 }
 
 .mypageCont .myRegiItems_con .levelStatus .levelStatus_tit {
-	padding: 20px;
+	padding: 20px 0 20px 20px;
 	box-sizing: border-box;
 	border-bottom: 1px solid #BFBFBF;
 }
@@ -2252,6 +2273,17 @@
 	color: #A2A2A2;
 	font-size: 0.875rem;
 }
+.mypageCont .myRegiItems_con .regiDate:after {
+	content: "";
+	display: inline-block;
+	margin: 0 5px;
+	width: 1px;
+	height: 10px;
+	background-color: #A2A2A2;
+}
+.mypageCont .myRegiItems_con .regiDate:last-child:after {
+	display: none;
+}
 
 .mypageCont .myRegiItems_con .levelStatus .level_detWrap {
 	width: calc(100% - 124px)
@@ -2269,6 +2301,8 @@
 
 .mypageCont .level_det_bot .borBtn .lnr-chevron-down,
 .mypageCont .qnabox_bot .borBtn .lnr-chevron-down {
+	position: relative;
+	margin-top: 2px;
 	margin-left: 5px;
 	font-size: 0.875rem;
 	font-weight: bold;
@@ -2278,6 +2312,8 @@
 
 .mypageCont .level_det_bot .m_borBtn .lnr-chevron-down,
 .mypageCont .qnabox_bot .m_borBtn .lnr-chevron-down {
+	position: relative;
+	top: 2px;
 	margin-left: 5px;
 	font-size: 0.875rem;
 	font-weight: bold;
@@ -2291,9 +2327,11 @@
 	color: #fff;
 }
 
+.mypageCont .level_det_bot .level_det_list li {display: inline-block;}
+
 .mypageCont .level_det_bot .level_det_list li:after {
 	content: "";
-	display: block;
+	display: inline-block;
 	margin: 0 10px;
 	width: 1px;
 	height: 14px;
@@ -2306,7 +2344,7 @@
 }
 
 .mypageCont .levelStatus_det .levelStatus_boxTit {
-	padding: 0 37px;
+	padding: 0 26px;
 	height: 40px;
 	background-color: #E6E6E6;
 	box-sizing: border-box;
@@ -2472,20 +2510,22 @@
 	margin-top: 6px;
 	font-size: 0.875rem;
 	width: 70%;
+}
+
+.qnabox_wrap .qnabox_tit .qnabox_det_list li {
+	display: inline-block;
+}
+
+.qnabox_wrap .qnabox_tit .qnabox_det_list li:last-child {
+	width: 530px;
 	overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
 }
 
-/* .qnabox_wrap .qnabox_tit .qnabox_det_list li:last-child {
-	width: 646px;
-	overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-} */
-
 .qnabox_wrap .qnabox_tit .qnabox_det_list li:after {
 	content: "";
+	display: inline-block;
 	margin: 0 10px;
 	width: 1px;
 	height: 10px;
@@ -2498,11 +2538,16 @@
 }
 
 .qnabox_wrap .qnabox_con {
+	position: relative;
 	display: none;
 	margin: 26px 0 20px 0;
 	padding: 27px 40px 2px;
 	box-sizing: border-box;
 	background-color: #F1F1F1;
+}
+
+.qnabox_wrap .qnabox_con .borBtn {
+	display: none;
 }
 
 .qnabox_wrap .qnabox_con .qna_quest {
@@ -2521,6 +2566,7 @@
 .qnabox_wrap .qnabox_con .qna_quest .qna_detail {
 	font-size: 0.875rem;
 	line-height: 1.5;
+	width: calc(100% - 30px);
 }
 
 .qnabox_wrap .qnabox_con .qna_quest .qna_detail .q_date {
@@ -2588,6 +2634,9 @@
 .mypageCont .regiList_titWrap {
 	margin-bottom: 23px;
 }
+.mypageCont .m_inquireBar {
+	display: none;
+}
 .mypageCont .regiList_titWrap.bor_bot {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #000;
@@ -2612,6 +2661,7 @@
 	border: 1px solid #CFCFCF;
 	border-radius: 10px;
 	box-shadow: 0px 3px 6px #00000029;
+	cursor: pointer;
 }
 .mypageCont .regiList_detWrap .regiList_detBox_01 .imgWrap {
 	margin-bottom: 15px;
@@ -2678,4 +2728,338 @@
 	font-family: 'Noto Sans KR', sans-serif;
 } 
 
+.mypage_wrap  .m_per_qnaBtn {
+	display: none;
+}
+
 /*등록제품*/
+
+.mypage_wrap .mypageCont .childAddBtn {
+	width: 18px;
+	height: 18px;
+	border: 1px solid #BCBCBC;
+	color: #7E7E7E;
+}
+
+.mypage_wrap .mypageCont .childAddBtn:hover {
+	border: 1px solid #D1282D;
+	background-color: #D1282D;
+	color: #fff;
+}
+
+.mypage_wrap .mypageCont .resignBtn {
+	margin-top: 10px;
+}
+
+.mypage_wrap .cancelBtn {
+	border: 1px solid #000;
+	box-sizing: border-box;
+	color: #000 !important;
+}
+
+.mypageCont .mustConfirm {
+	margin-bottom: 30px;
+	font-size:1.125rem;
+	color: #606060;
+}
+
+.mypageCont .chkListBoxTit {
+	padding-bottom: 10px;
+	font-weight: 500;
+	font-size: 1.125rem;
+	border-bottom: 1px solid #BEBEBE;
+}
+
+.mypageCont .chkListBoxWrap {
+	padding-top: 10px;
+}
+
+.mypageCont .chkListBoxWrap > p {
+	margin-bottom: 13px;
+	font-size: 0.875rem;
+}
+
+.mypageCont .chkListBoxWrap .smallChkList {
+	margin-bottom: 30px;
+	font-size: 0.875rem;
+}
+
+.mypageCont .chkListBoxWrap .smallChkList li {
+	margin-bottom: 10px;
+}
+
+.mypageCont .chkListBoxWrap .smallChkList li img {
+	position: relative;
+	top: 6px;
+	margin-right: 5px;
+}
+
+.mypageCont .agreeAboutWrap {
+	padding-top: 10px;
+	border-top: 1px solid #BEBEBE;
+	margin-bottom: 40px;
+	font-size: 0.875rem;
+}
+
+.mypageCont .agreeAboutWrap input[type=checkbox] {
+	margin-right: 7px;
+	display: block;
+	width: 17px;
+	height: 17px;
+}
+
+.mypageCont .confirmWrap .inputWrap {
+	padding: 0 20px;
+	margin: 8px 0;
+	border: 1px solid #DCDCDC;
+	box-sizing: border-box;
+	height: 45px;	
+}
+
+.mypageCont .confirmWrap .inputWrap input {
+	padding-left: 20px;
+	font-size: 0.875rem;
+}
+
+.mypageCont .confirmWrap .inputWrap:nth-child(1) {
+	background-color: #EEEEEE;
+}
+
+.mypageCont .confirmWrap .inputWrap:nth-child(1) input {
+	background-color: #EEEEEE;
+}
+
+.mypage_wrap .s_halfBtnWrap .halfsBtn {
+	margin: 45px 5px;
+	width: 200px;
+}
+
+.resignWrap .resiginTxt01 {
+	margin: 90px 0 80px 0;
+	font-size: 1.5rem;
+}
+
+.resignWrap .resiginTxt02 {
+	margin-bottom: 70px;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	font-weight: 500;
+	word-break: keep-all;
+}
+
+.resignWrap .gohomeBtn {
+	margin: 0 auto;
+	border: 1px solid #707070;
+	width: 200px;
+	height: 45px;
+	transition: all 0.3s;
+}
+
+.resignWrap .gohomeBtn:hover {
+	border: 1px solid #D10000;
+	background-color: #D10000;
+	color: #fff;
+}
+
+.resignWrap .resiginDetWrap {
+	margin: 0 auto;
+	width: 1010px;
+}
+
+.resignWrap .resiginDetWrap .skyblueDetBox {
+	margin-bottom: 30px;
+	padding: 40px 35px;
+	border-radius: 10px;
+	background-color: #EEF7FF;
+	box-sizing: border-box;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.resignWrap .resiginDetWrap .selectWrap select {
+	display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 1px solid #707070;
+    border-radius: 11px;
+    height: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../images/sub/selArrow.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+}
+
+.resignWrap .resiginDetWrap .selectWrap textarea {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #707070;
+	border-radius: 11px;
+	height: 324px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 1rem;
+}
+
+.resignWrap .resiginTitWrap {
+	margin-bottom: 35px;
+	font-size: 1.125rem;
+}
+
+.resignWrap .resiginTitWrap .resiginTit {
+	margin-right: 35px;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.resignWrap .fileAddWrap .fileAddWRAP {
+	margin: 0 auto;
+	width: 97%;
+}
+
+.resignWrap .fileAddWrap .fileAddTit {
+	margin: 10px 0;
+}
+
+.resignWrap .fileAddWrap .fileAddTit:before {
+	content:"";
+	margin-right: 10px;
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+.resignWrap .fileAddWrap .fileAddBtn {
+	margin-right: 15px;
+	width: 70px;
+	height: 70px;
+	border-radius: 12px;
+	border:1px solid #000;
+}
+
+.resignWrap .fileAddDet {
+	color: #7E7E7E;
+	font-size: 0.875rem;
+	line-height: 1.5;
+}
+
+.fileNmShowWrap {
+	width: calc(100% - 70px)
+}
+
+.fileNmShowWrap .fileNmShowBox li {
+	margin: 0 20px;
+	font-size: 0.8rem;
+	color: #7E7E7E;
+}
+
+.fileNmShowWrap .fileNmShowBox li .cnclBtn {
+	margin-left: 5px;
+}
+
+.resiginDetWrap table {
+	border-top: 1px solid #BEBEBE;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.resiginDetWrap table tr {
+	border-bottom: 1px solid #BEBEBE;
+}
+
+.resiginDetWrap table tr:last-child {
+	border-bottom: none;
+}
+
+.resiginDetWrap table tr th {
+	padding: 15px 0;
+	width: 25%;
+	text-align: left;
+}
+
+.resiginDetWrap table tr td {
+	padding: 15px 0;
+	width: 75%;
+	color: #7E7E7E;
+	font-weight: 700;
+}
+
+.subWrap .resignFont {
+	margin: 50px 0 70px 0;
+	font-size:2rem;
+	font-weight: 500;
+}
+
+.resiginDetWrap table .flieBoxWrap  {
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.resiginDetWrap table .flieBoxWrap li {
+	margin-right: 10px;
+}
+
+.mypage_wrap .joinInputWrap {
+	margin-top: 20px;
+}
+
+.mypage_wrap .joinInputWrap.nomt {
+	margin-top: 10px;
+	border-bottom: none;
+}
+
+.mypage_wrap .joinInputWrap textarea {
+	width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+	border-radius: 11px;
+	height: 324px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 1rem;
+	resize: none;
+}
+
+.mypage_wrap .agreeContWrap {
+	padding: 14px 40px;
+	box-sizing: border-box;
+	background-color: #E9E9E9;
+	height: 167px;
+	overflow-y: scroll;
+	color: #707070;
+	font-size: 0.875rem;
+}
+
+.mypage_wrap .resiginDetWrap .resignChk {
+	margin-bottom: 15px;
+}
+
+.mypage_wrap .resiginDetWrap .resignChk span {
+	margin-left: 8px;
+	font-size: 0.75rem;
+}
+
+.mypage_wrap .m_block_titWrap {
+	display: none;
+}
+
+.resignWrap .s_chkBoxWrap {
+	margin-top: 5px;
+	font-size: 0.875rem;
+	color: #7E7E7E;
+}
+
+.mypageCont .editBtnWrap .borBtn {
+	width: 114px;
+}
+
+

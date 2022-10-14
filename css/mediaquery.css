@@ -67,6 +67,24 @@
 	.mypageCont .regiList_detWrap .regiList_detBox_02 {
 		padding: 0 10px;
 	}
+	.qnabox_wrap .qnabox_tit .qnabox_det_list li:last-child {
+		width: 350px;
+	}
+	.mypageCont .regiList_titWrap .regi_list_tit02 {
+		width: 449px;
+	}
+	.mypage_wrap .sidemenu {
+		width: 230px;
+	}
+	.mypageCont .level_det_bot {
+		flex-wrap: wrap;
+	}
+	.mypageCont .level_det_bot .level_det_list {
+		margin-right: 10px;
+	}
+	.mypage_wrap .borBtn02.rad50 {
+		padding: 0 7px;
+	}
 }
 
 @media (max-width:1022px){	
@@ -836,11 +854,22 @@
 		background-image: url('../images/search.png');
 		background-color: transparent;
 	}
+
+
 	.mypage_wrap .sidemenu {
 		display: none;
 	}
 	.mypage_wrap .mypageCont {
 		width: 100%;
+	}
+
+	.mypage_wrap .mypageCont .editInfoWrap {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.mypage_wrap .halfsBtn {
+		margin: 70px 0 10px;
 	}
 
 	.mypageCont .mypage_gryChkBox {
@@ -861,6 +890,15 @@
 	}
 	.mypageCont .regiList_detBox_two {
 		width: 560px;
+	}
+	.mypage_wrap .borBtn02.rad50 {
+		padding: 0 10px;
+	}
+	.resignWrap .resiginTitWrap {
+		display: none;
+	}
+	.resignWrap .resiginDetWrap {
+		width: 100%;
 	}
 
 }
@@ -897,6 +935,10 @@
 
 	.subWrap {
 		padding-bottom: 50px;
+	}
+
+	.subWrap.pertoper {
+		padding-top: 0;
 	}
 
 	.serviceBttm02 {
@@ -1059,7 +1101,8 @@
 		display: block;
 	}
 	.mypage_wrap .borBtn {
-		display: inline-block;
+		display: flex;
+		width: 108px;
 		line-height: 30px;
 	}
 	.level_det_bot .borBtn {
@@ -1069,7 +1112,7 @@
 		line-height: 35px;
 	}
 	.mypageCont .myRegiItems_con.chng {
-		padding: 0 0 20px 20px;
+		padding: 0 0 20px 15px;
 		margin: 20px 0 0 0;
 		width: 100%;
 		overflow-x: scroll;
@@ -1099,13 +1142,137 @@
 		width: 90%;
 	}
 	.mypageCont .myRegiItems .myRegiItems_tit {
-		padding:0 25px 16px;
+		padding:0 15px 16px;
 		border-bottom: 1px solid #C1C1C1;
 	}
 	.myRegiLast_wrap {
 		display: block !important;
 		margin-top: 15px;
 		padding: 10px 0;
+	}
+	.mypageCont .regiList_titWrap .regi_list_tit {
+		display: none;
+	}
+	.mypage_wrap .borBtn02.wid95 {
+		margin: 0 auto;
+		width: 84%;
+		height: 49px;
+		border:1px solid #B4B4B4;
+	}
+	.mypage_wrap .mypageCont .regiList_detWrap {
+		margin: 0 auto;
+		width: 96%;
+	}
+	.mypageCont .regiList_detBox_two {
+		width: calc(100% - 95px);
+		display: block !important;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 {
+		padding: 0 32px;
+		width: 100%;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li.m_none {display: none;}
+	.mypageCont .regiList_detWrap .regiList_detBox_02:first-child .regiList_small:after {
+		display: none;
+		margin: 0;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li {
+		margin-bottom: 10px;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li:last-child {
+		margin-bottom: 10px;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li span:nth-child(1) {
+		width: 40%;
+	}
+	.mypageCont .regiList_titWrap.bor_bot {
+		display: none;
+	}
+	.mypage_wrap.m_gry {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.mypage_wrap.m_gry .mypageCont .myRegiItems_con .levelBoxWrap {
+		background-color: #fff;
+		margin: 0 auto;
+	}
+	.mypage_wrap.m_gry .levelStatus_wrap .levelStatus {
+		background-color: #fff;
+	}
+	.mypage_wrap.m_gry .mypageCont .myRegiItems_con .m_block_box {
+		margin-bottom: 20px;
+		background-color: #fff;
+		padding: 20px 0;
+	}
+	.mypage_wrap.m_gry .mypageCont .myRegiItems_con {
+		margin: 0 auto;
+	}
+	.mypageCont .myRegiItems_con .m_block_box .m_selBox {
+		margin: 10px auto 20px;
+		display: flex;
+		width: 95%;
+	}
+	.mypageCont .m_selBox select:nth-child(1) {
+		margin-right: 15px;
+	}
+	.mypageCont .m_selBox select {
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 1rem;
+	}
+	.mypageCont .m_inquireBar {
+		display: flex;
+		padding: 0 20px;
+		height: 60px;
+		border-bottom: 1px solid #BFBFBF;
+		background-color: #fff;
+	}
+	.qnabox_wrap .qnabox:nth-child(1) {
+		padding: 20px;
+	}
+	.qnabox_wrap .qnabox {
+		padding: 20px;
+		background-color: #fff;
+		border-bottom: none;
+		margin-bottom: 20px;
+	}
+	.qnabox_wrap .qnabox_tit .qnabox_det_list {
+		display: block;
+	}
+	.qnabox_wrap .qnabox_tit .qnabox_det_list li:last-child {
+		display: block;
+		width: 62%;
+	}
+	.qnabox_wrap .qnabox_tit .qnabox_det_list li:after {
+		display: none;
+	}
+	.resignWrap .resiginDetWrap .skyblueDetBox {
+		border-radius: 0;
+		padding: 15px 20px;
+		background-color: #F4F4F4;
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+	.resignWrap .resiginDetWrap .resignDetBox {
+		padding: 0 20px;
+	}
+	.mypage_wrap .m_block_titWrap {
+		display: block;
+		background-color: #F4F4F4;
+		padding: 15px 25px;
+	} 
+
+	.subWrap .resiginDetWrap.m_diff_padd {
+		padding: 0 25px;
+		box-sizing: border-box;
+	}
+	.mypage_wrap .resiginDetWrap .resignChk {
+		margin-top: 15px;
+	}
+	.mypage_wrap .m_block_titWrap {
+		font-size: 0.875rem;
+	}
+	.mypage_wrap .agreeContWrap {
+		padding: 14px 20px;
 	}
 
 }
@@ -1196,14 +1363,30 @@
 		height: 60px;
 		transition: all 0.3s;
 	}
+	.myRegiItems .m_blockBtn .lnr-chevron-right {
+		margin-left: 10px;
+	}
 	.myRegiItems .m_blockBtn:hover {
 		color: #fff;
 		background-color: #D10000;
 		border-bottom: 1px solid #D10000;
 	}
+	.mypageCont .myRegiItems_con .levelStatus .levelStatus_tit {
+		align-items: flex-start;
+	}
+	.mypageCont .myRegiItems_con .levelStatus .level_detWrap .m_borBtn {
+		font-size: 0.75rem;
+		padding: 5px 11px;
+		height: auto; 
+		line-height: 1;
+	}
+	.mypageCont .myRegiItems_con .levelStatus .level_detWrap .m_borBtn .lnr-chevron-down {
+		font-size: 0.75rem;
+		top: 1px;
+	}
 	.mypageCont .myRegiItems_con .levelBoxWrap {
-		margin: 0 auto 20px;
-		width: 95%;
+		margin: 0 15px 20px;
+		width: calc(100% - 30px);
 	}
 	.mypageCont .level_det_bot .level_det_list {
 		flex-wrap: wrap;
@@ -1257,9 +1440,10 @@
 		border: 1px solid #C1C1C1;
 		border-top: none;
 		height: 60px;
+		border-right: none;
 	}
 	.myRegiItems .perQnaWrap .perQnaBox:first-child {
-		border-right: none;
+		border-left: none;
 	}
 	.myRegiItems .perQnaWrap .perQnaBox p {
 		margin: 0 10px;
@@ -1288,16 +1472,92 @@
 	.myRegiLast_wrap .myRegiLast_box .myRegiLast_small .myRegiLast_small02 {
 		font-size: 1.125rem;
 	}
+	.mypage_wrap.m_gry {
+		background-color: #f1f1f1;
+	}
+	.mypage_wrap.m_gry .levelStatus .levelStatus_tit {
+		border-bottom: none;
+		margin-bottom: 15px;
+	}
 
-
+	.qnabox_wrap .qnabox {
+		margin-bottom: 15px;
+	}
+	.qnabox_wrap .qnabox_con {
+		padding: 27px 15px 2px;
+	}
 	
+	.resignWrap .resiginTxt01 {
+		margin: 23px 0 55px 0;
+		font-size: 1.125rem;
+	}
+	.resignWrap .resiginTxt02 {
+		font-weight: 400;
+	}
+	.resignWrap .gohomeBtn {
+		margin: 150px 0 100px 0;
+		width: 100%;
+		height: 40px;
+	}
+
+	.resignWrap .resiginDetWrap .selectWrap select {
+		padding: 0 14px;
+		height: 40px;
+		font-size: 0.875rem;
+	}
+	.resignWrap .resiginDetWrap .selectWrap textarea {
+		padding: 14px;
+		font-size: 0.875rem;
+	}
+	.resignWrap .fileAddWrap .fileAddWRAP {
+		align-items: flex-start;
+	}
+	.resignWrap .fileAddWrap .fileNmShowWrap {
+		height: 120px;
+		overflow-y: scroll;
+		align-items: flex-start;
+	}
+	.fileNmShowWrap .fileNmShowBox li {
+		margin: 0 12px;
+	}
+	.resignWrap .fileAddWrap .fileAddBtn {
+		margin-right: 4px;
+	}
+	.subWrap .resignFont {
+		margin: 0 0 30px 0;
+		font-size: 1.250rem;
+	}
+	.resiginDetWrap table tr th,
+	.resiginDetWrap table tr td {
+		vertical-align: top;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+	.resiginDetWrap table tr th {
+		width: 28%;
+	}
+	.resiginDetWrap table tr td {
+		width: 72%;
+	}
+	.mypage_wrap .resiginDetWrap .resignChk {
+		font-weight: 500;
+		font-size: 0.875rem;
+	}
+	.mypage_wrap .joinInputWrap textarea {
+		height: 240px;
+		font-size: 0.875rem;
+	}
+	.joinInputWrap .childyear {
+		margin: 0 4%;
+		width: 33%;
+	}
 }
 
 @media (max-width:698px) {
 
-	  body {
+	body {
 		-webkit-tap-highlight-color : rgb(237,237,237,0.6) !important;;
-	  }
+	}
 
     #popupWrap .popupBox {
         width: 300px;
@@ -1531,13 +1791,12 @@
 	}
 
 	.cenBoxWrap .loginWrap {
-		padding: 100px 0 0 0;
+		padding: 20px 0 0 0;
 		width: 86%;
 	}
 
 	.cenBoxWrap .loginWrap .loginTit {
-		margin-bottom: 35px;
-		font-size: 1.5rem;
+		display: none;
 	}
 
 	.cenBoxWrap .loginWrap .inputWrap input {
@@ -1901,6 +2160,9 @@
 
 	.popUpwrap .popUpBox .textBox .txt01 {
 		font-size: 1.125rem;
+	}
+	.popUpwrap .popUpBox .textBox .mbDiffer02 .blueAlrm {
+		font-size: 0.875rem;
 	}
 
 	.popUpwrap .popUpBox .textBox .txt02 {
@@ -2312,6 +2574,20 @@
 		display: inline-block;
 		line-height: 30px;
 	}
+	.m_flex_right {
+		display: -webkit-box; 
+		display: -ms-flexbox; 
+		display: flex; 
+		justify-content: flex-end;
+	}
+	.mypage_wrap.m_gry .m_borBtn {
+		border: none;
+	}
+	.mypage_wrap.m_gry .m_borBtn .lnr-chevron-right {
+		margin-left: 7px;
+		font-weight: bold;
+		font-size: 0.75rem;
+	}
 	.level_det_bot .m_borBtn {
 		margin-top: 10px;
 	} 
@@ -2328,5 +2604,122 @@
 	.levelcirWrap .cirStatus_wrap .cirStatus_det {
 		width: calc(100% - 80px);
 	}
+	.mypageCont .regiList_detWrap .regiList_detBox {
+		margin-bottom: 15px;
+		padding: 15px 20px;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li span:nth-child(1) {
+		width: 50%;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_01 .imgWrap {
+		width: 71px;
+		height: 71px;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 {
+		padding: 0 11px;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li span:nth-child(1) {
+		font-size: 0.75rem;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li span:nth-child(2) {
+		font-size: 0.75rem;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li {
+		margin-bottom: 5px;
+	}
+	.mypageCont .regiList_detWrap .regiList_detBox_02 .regiList_small li:last-child {
+		margin-bottom: 5px;
+	}
+	.mypage_wrap .borBtn02.wid95 {
+		margin: 0 auto;
+		width: 69%;
+	}
+	.mypageCont .myRegiItems_con .levelStatus .level_imgWrap {
+		margin-right: 20px;
+	}
+	.mypageCont .level_det_bot .level_det_list li {
+		margin-bottom: 5px;
+		font-size: 0.75rem;
+	}
+	.mypageCont .level_det_bot .level_det_list li:after {
+		position: relative;
+		top: 3px;
+		margin: 0 4px;
+	}
+	.mypageCont .level_det_bot .level_det_list {
+		margin-top: 10px;
+	}
+	.mypageCont .myRegiItems_con .regiDate {
+		font-size: 0.75rem;
+	}
+	.qnabox_wrap .qnabox .qnabox_bot {
+		display: block;
+	}
+	.qnabox_wrap .qnabox .qnabox_bot .borBtn {
+		margin-top: 10px;
+	}
+	.qnabox_wrap .qnabox_tit .qnabox_cancel {
+		display: none;
+	}
+	.qnabox_wrap .qnabox_con .borBtn {
+		display: flex;
+		position: absolute;
+		top: 11px;
+		right: 30px;
+	}
+	.qnabox_wrap .qnabox_tit .qnabox_det_list li:last-child {
+		width: 80%;
+	}
+	.mypage_wrap  .m_per_qnaBtn {
+		display: flex;
+		border-top: 1px solid #BFBFBF;
+		border-bottom: 1px solid #BFBFBF;
+		height: 60px;
+		background-color: #fff;
+	}
+	.mypageCont .chkListBoxWrap .smallChkList {
+		font-size: 0.75rem;
+	}
+	.mypageCont .chkListBoxWrap > p {
+		font-size: 0.75rem;
+	}
+	.mypageCont .mustConfirm {
+		font-size: 1rem;
+	}
+	.mypageCont .chkListBoxTit {
+		font-size: 1rem;
+	}
+	.mypageCont .s_halfBtnWrap .halfsBtn {
+		height: 40px;
+	}
+	.mypage_wrap .s_halfBtnWrap .halfsBtn {
+		margin: 10px 0;
+		width: 100%;
+	}
+	.mypage_wrap .s_halfBtnWrap.halfwidDiffer {
+		justify-content: space-between;
+	}
+	.mypage_wrap .s_halfBtnWrap.halfwidDiffer .halfsBtn {
+		margin-top: 50px;
+		width: 48%;
+	}
+	.mypage_wrap .s_halfBtnWrap {
+		flex-wrap: wrap;
+	}
+	.resignWrap .confirmWrap .inputWrap > img {
+		height: 20px;
+	}
+	.popUpwrap .popUpBox .textBox .mbDiffer {
+		margin-bottom: 50px;
+	}
 
+}
+
+@media (max-width:450px) {
+	.mypageCont .mypage_gryChkBox .gryChkBox_botbox:first-child {
+		width: 75px;
+	}
+	.mypageCont .mypage_gryChkBox .gryChkBox_botbox:first-child:after {
+		right: -20px;
+	}
 }

@@ -1307,6 +1307,8 @@
 	border: 1px solid #000;
 }
 .itemTabBtnWrap {
+	margin: 0 auto;
+	width: 1280px;
 	border-bottom: 1px solid #CCCCCC;
 }
 .itemTabBtn {
@@ -1364,6 +1366,12 @@
 	border: 1px solid #CFCFCF;
 	box-shadow: 3px 5px 12px #00000029;
 	box-sizing: border-box;
+}
+
+.itemTabWrap .itemTabBox .itemDetailWrap li .itemDetail .imgWrap {
+	width: 100%;
+	height: 231px;
+	overflow: hidden;
 }
 
 
@@ -3136,6 +3144,10 @@
 	height: 37px;
 	border-radius: 5px;
 	border: 1px solid #707070;
+	transition: all 0.3s;
+}
+.appsListWrap .appsListBox .appLtxtBox .appStxtBtn:hover {
+	background-color: rgb(0,0,0,0.1);
 }
 .appIntroGryWrap {
 	padding: 50px 0;
@@ -3159,10 +3171,19 @@
 	height: 53px;
 	background-color: #01875F;
 	color: #fff;
+	transition: all 0.3s;
+}
+.appIntroGryWrap .appIntrotxtBox .appDownBtn:hover {
+	background-color:#0f624a;
 }
 .appIntroGryWrap .appIntrotxtBox .appDownBtn.blue {
 	margin-left: 15px;
 	background-color: #1E76F2;
+	transition: all 0.3s;
+}
+
+.appIntroGryWrap .appIntrotxtBox .appDownBtn.blue:hover {
+	background-color:#1c509b;
 }
 .appIntroGryWrap .m_appDownBtn {
 	display: none;

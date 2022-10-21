@@ -160,12 +160,13 @@ header .h_center .h_top {
 	vertical-align: bottom;
 }
 
-.htMwrap li:nth-child(3) .htMimg img {
+.htMwrap li:nth-child(1) .htMimg img{
 	bottom: 5px;
 }
 
 .htMwrap li:nth-child(4) .htMimg img {
 	height: 96%;
+	bottom: 2px;
 }
 
 .htMwrap li {
@@ -691,6 +692,11 @@ header .m_gnb {display: none;}
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-image: url("/images/main_banner.png");
+}
+.cont03 .mainBnr a {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 /*cont03*/
 

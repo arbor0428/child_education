@@ -27,6 +27,10 @@
     .c_center {
 		width: 98%;
 	}
+	.itemTabBtnWrap {
+		padding: 0 20px;
+		width: 100%;
+	}
 	.subWrap.appWrap .c_center{
 		width: 95%;
 	}
@@ -443,6 +447,8 @@
     }
     
     .cont04 .eventBtnWrap .eventBtn {
+		border-radius: 11px;
+		overflow:hidden;
         width: 49%;
     }
 
@@ -1363,7 +1369,7 @@
 		font-size: 0.875rem;
 	}
 	.musicTabContWrap .musicTabCont {
-		padding-top: 50px;
+		padding-top: 15px;
 	}
 	.appsListWrap {
 		width: 100%;
@@ -1763,6 +1769,8 @@
     }
     .cont04 .eventBtnWrap .eventBtn .eImgWrap {
         height: 140px;
+		overflow: hidden;
+		isolation: isolate;
     }
     .cont05 .newsTop {
         position: relative;
@@ -1798,8 +1806,11 @@
 
     footer .f_top .f_select {
         bottom: 56px;
-        width: 158px;
+        width: 134px;
     }
+	footer .f_top .f_select span {
+		font-size: 0.75rem;
+	}
     footer .f_awardWrap .f_award {
         margin-right: 0;
         margin-bottom: 20px;
@@ -1870,7 +1881,7 @@
 	}
 
     .htMwrap li {
-        margin: 0 12px;
+        margin: 0 6px;
     }
     .htMwrap .htMimg img {
         height: 26px;
@@ -1894,7 +1905,7 @@
 	}
 
 	.cenBoxWrap .loginWrap {
-		padding: 20px 0 0 0;
+		padding: 160px 0 0 0;
 		width: 86%;
 	}
 
@@ -2594,11 +2605,20 @@
 		border-bottom: none;
 	}
 
+	.itemTabWrap .itemTabBox .itemDetailWrap li .itemDetail .imgWrap {
+		width: 100%;
+		height: 172px;
+		overflow: hidden;
+	}
+
 	.itemTabBtnWrap {
 		width: 100%;
 		overflow-x: scroll;
 		 -ms-overflow-style: none; /* IE and Edge */
 		 scrollbar-width: none; /* Firefox */
+	}
+	.itemTabBtn {
+		width: 430px;
 	}
 	.itemTabBtnWrap::-webkit-scrollbar {
 		display: none; /* Chrome, Safari, Opera*/
@@ -2767,8 +2787,11 @@
 	.qnabox_wrap .qnabox_con .borBtn {
 		display: flex;
 		position: absolute;
-		top: 11px;
+		top: 21px;
 		right: 30px;
+		width: 80px; 
+		height: 20px;
+		font-size: 0.75rem;
 	}
 	.qnabox_wrap .qnabox_tit .qnabox_det_list li:last-child {
 		width: 80%;

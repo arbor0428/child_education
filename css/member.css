@@ -352,7 +352,7 @@
 
 .joinInputWrap .ipt_smallbtn.red {
     color: #fff;
-    border: none;
+    border: 1px solid #D1282D;
     background-color: #D1282D;
 }
 
@@ -560,7 +560,9 @@
 }
 
 .joinInputWrap .childwm {
-    width: 22%;
+	margin-left: 2%;
+    width: 20%;
+	box-sizing: border-box;
 }
 
 .joinInputWrap .childyear {

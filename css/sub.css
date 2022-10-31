@@ -761,6 +761,9 @@
     -webkit-appearance: none;
 }
 
+.joinInputWrap .child_plusBtn {width: 24px; height: 24px;}
+
+
 .grayCont .ser_whtBox .item_tableWrap {
 	position: relative;
 	margin-top: 20px;

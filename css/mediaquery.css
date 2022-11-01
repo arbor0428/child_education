@@ -1854,20 +1854,10 @@
 	}
 
 	.cenBoxWrap.vh100 {
-		padding: 0;
 		width: 100% !important;
-		height: 100vh;
 	}
 
-	.cenBoxWrap.flcul {
-		display: -webkit-box; 
-		display: -ms-flexbox; 
-		display: flex; 
-		-webkit-box-pack: justify; 
-		-ms-flex-pack: justify; 
-		justify-content: space-between;
-		flex-direction: column;
-	}
+
 
 	.cenBoxWrap.vh100 .m_wrap {
 		width: 86%;
@@ -1989,7 +1979,7 @@
 	}
 
 	.cenBoxWrap .joinWrap {
-		padding: 100px 0 0 0;
+		padding: 100px 0;
 		width: 100%;
 	}
 
@@ -1999,8 +1989,8 @@
 	}
 
 	.submitBtn.nextBtn {
-		width: 100%;
-		margin: 100px auto 0;
+		width: 86%;
+		margin: 100px auto;
 	}
 
 	.submitBtn02 {
@@ -2101,7 +2091,7 @@
 	}
 
 	.cenBoxWrap.j_step4 {
-		padding: 100px 0 0 0;
+		padding: 100px 0;
 		width: 100%;
 	}
 
@@ -2174,8 +2164,8 @@
 	}
 
 	.submitBtn.nextBtn02 {
-		margin: 0;
-		width: 100%;
+		margin: 0 auto;
+		width: 86%;
 	}
 
 	.idChkShow {

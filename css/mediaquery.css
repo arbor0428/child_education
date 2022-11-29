@@ -1660,6 +1660,12 @@
 		margin: 0 4%;
 		width: 33%;
 	}
+	.serialnsert input {
+		width: calc(100% - 80px) !important;
+	}
+	.serialnsert .confirmBtn {
+		width: 80px;
+	}
 }
 
 @media (max-width:698px) {
